@@ -1,0 +1,36 @@
+{
+  "name": "spritesheet.js",
+  "version": "0.1.0",
+  "description": "Spritesheet generator",
+  "main": "index.js",
+  "directories": {
+    "example": "example",
+    "test": "test"
+  },
+  "dependencies": {
+    "async": "~0.2.9",
+    "binpacking": "~0.0.1",
+    "handlebars": "~1.0.12",
+    "underscore": "~1.5.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/krzysztof-o/spritesheet.js.git"
+  },
+  "keywords": [
+    "spritesheet",
+    "texture",
+    "starling",
+    "sparrow",
+    "generator"
+  ],
+  "author": "Krzysztof Opalka",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/krzysztof-o/spritesheet.js/issues"
+  }
+}
