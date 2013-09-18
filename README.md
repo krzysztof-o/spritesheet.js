@@ -2,6 +2,7 @@ spritesheet.js
 ==============
 
 Spritesheet generator in node.js
+--
 
 ###Example###
 ```javascript
@@ -12,6 +13,10 @@ spritesheet.generate(['1.png', '2.png'], {name: 'spritesheet'}, function (err) {
 
   console.log('Spritesheet successfully generated in', __dirname);
 });
+```
+###Installation###
+```
+npm install spritesheet.js
 ```
 
 ###Test###
