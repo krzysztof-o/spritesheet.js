@@ -17,9 +17,8 @@ spritesheet.generate(['1.png', '2.png'], {name: 'spritesheet'}, function (err) {
 });
 ```
 ###Installation###
-```
-npm install spritesheet.js
-```
+1. Install [ImageMagick](http://www.imagemagick.org/)
+2. ```npm install spritesheet.js```
 
 ###Test###
 ```
