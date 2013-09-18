@@ -1,8 +1,8 @@
 spritesheet.js
 ==============
 
-Spritesheet generator in node.js
---
+Spritesheets generator in node.js
+
 
 ###Example###
 ```javascript
