@@ -1,6 +1,5 @@
 node_modules
 .idea
 *.iml
-example
 export
 assets

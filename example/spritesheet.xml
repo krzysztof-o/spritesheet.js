@@ -1,0 +1,11 @@
+<TextureAtlas imagePath="spritesheet.png">
+
+	<SubTexture name="/Users/Krzysztof/dev/projects/spritesheet.js/example/assets/500x500.jpg" x="0" y="0" width="500" height="500"/>
+
+	<SubTexture name="/Users/Krzysztof/dev/projects/spritesheet.js/example/assets/200x200.jpg" x="500" y="0" width="200" height="200"/>
+
+	<SubTexture name="/Users/Krzysztof/dev/projects/spritesheet.js/example/assets/100x100.jpg" x="500" y="200" width="100" height="100"/>
+
+	<SubTexture name="/Users/Krzysztof/dev/projects/spritesheet.js/example/assets/50x50.jpg" x="600" y="200" width="50" height="50"/>
+
+</TextureAtlas>
