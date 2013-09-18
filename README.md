@@ -18,9 +18,14 @@ spritesheet.generate(['1.png', '2.png'], {name: 'spritesheet'}, function (err) {
 ```
 mocha test
 ```
+###Supported spritesheet formats###
+* Starling / Sparrow
 
 
 ###TODO:###
 * command line interface
 * file masks
 * trimming images
+* additional spritesheet formats
+  * Easel.js
+  * cocos2D
