@@ -3,6 +3,8 @@ spritesheet.js
 
 Spritesheets generator in node.js
 
+###Supported spritesheet formats###
+* Starling / Sparrow
 
 ###Example###
 ```javascript
@@ -23,9 +25,6 @@ npm install spritesheet.js
 ```
 mocha test
 ```
-###Supported spritesheet formats###
-* Starling / Sparrow
-
 
 ###TODO:###
 * command line interface
