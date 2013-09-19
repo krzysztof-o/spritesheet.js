@@ -1,4 +1,4 @@
-<TextureAtlas imagePath="generator.png">
+<TextureAtlas imagePath="spritesheet.png">
 
 	<SubTexture name="500x500" x="0" y="0" width="500" height="500"/>
 
