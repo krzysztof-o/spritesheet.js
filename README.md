@@ -10,7 +10,7 @@ Spritesheets generator in node.js
 ```javascript
 var spritesheet = require('spritesheet.js');
 
-spritesheet.generate(['1.png', '2.png'], {name: 'spritesheet'}, function (err) {
+spritesheet(['1.png', '2.png'], {name: 'spritesheet'}, function (err) {
   if (err) throw err;
 
   console.log('Spritesheet successfully generated in', __dirname);
