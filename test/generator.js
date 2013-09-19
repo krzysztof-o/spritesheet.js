@@ -8,10 +8,10 @@ describe('generator', function () {
   describe('getImagesSizes', function () {
     it('should return image sizes', function (done) {
       var FILES = [
-        {name: __dirname + '/fixtures/50x50.jpg', width: 50, height: 50},
-        {name: __dirname + '/fixtures/100x100.jpg', width: 100, height: 100},
-        {name: __dirname + '/fixtures/200x200.jpg', width: 200, height: 200},
-        {name: __dirname + '/fixtures/500x500.jpg', width: 500, height: 500}
+        {path: __dirname + '/fixtures/50x50.jpg', width: 50, height: 50},
+        {path: __dirname + '/fixtures/100x100.jpg', width: 100, height: 100},
+        {path: __dirname + '/fixtures/200x200.jpg', width: 200, height: 200},
+        {path: __dirname + '/fixtures/500x500.jpg', width: 500, height: 500}
       ];
 
       generator.getImagesSizes(FILES, function (err, files) {
@@ -36,10 +36,10 @@ describe('generator', function () {
 
   describe('determineCanvasSize', function () {
     var FILES = [
-      {name: __dirname + '/fixtures/50x50.jpg', width: 50, height: 50},
-      {name: __dirname + '/fixtures/100x100.jpg', width: 100, height: 100},
-      {name: __dirname + '/fixtures/200x200.jpg', width: 200, height: 200},
-      {name: __dirname + '/fixtures/500x500.jpg', width: 500, height: 500}
+      {path: __dirname + '/fixtures/50x50.jpg', width: 50, height: 50},
+      {path: __dirname + '/fixtures/100x100.jpg', width: 100, height: 100},
+      {path: __dirname + '/fixtures/200x200.jpg', width: 200, height: 200},
+      {path: __dirname + '/fixtures/500x500.jpg', width: 500, height: 500}
     ];
 
     it('should return square canvas', function (done) {
@@ -75,10 +75,10 @@ describe('generator', function () {
 
   describe('generateImage', function () {
     var FILES = [
-      {name: __dirname + '/fixtures/50x50.jpg', width: 50, height: 50, x: 0, y: 0},
-      {name: __dirname + '/fixtures/100x100.jpg', width: 100, height: 100, x: 0, y: 0},
-      {name: __dirname + '/fixtures/200x200.jpg', width: 200, height: 200, x: 0, y: 0},
-      {name: __dirname + '/fixtures/500x500.jpg', width: 500, height: 500, x: 0, y: 0}
+      {path: __dirname + '/fixtures/50x50.jpg', width: 50, height: 50, x: 0, y: 0},
+      {path: __dirname + '/fixtures/100x100.jpg', width: 100, height: 100, x: 0, y: 0},
+      {path: __dirname + '/fixtures/200x200.jpg', width: 200, height: 200, x: 0, y: 0},
+      {path: __dirname + '/fixtures/500x500.jpg', width: 500, height: 500, x: 0, y: 0}
     ];
 
     it('should generate image file', function (done) {
@@ -97,10 +97,10 @@ describe('generator', function () {
 
   describe('generateData', function () {
     var FILES = [
-      {name: __dirname + '/fixtures/50x50.jpg', width: 50, height: 50, x: 0, y: 0},
-      {name: __dirname + '/fixtures/100x100.jpg', width: 100, height: 100, x: 0, y: 0},
-      {name: __dirname + '/fixtures/200x200.jpg', width: 200, height: 200, x: 0, y: 0},
-      {name: __dirname + '/fixtures/500x500.jpg', width: 500, height: 500, x: 0, y: 0}
+      {path: __dirname + '/fixtures/50x50.jpg', width: 50, height: 50, x: 0, y: 0},
+      {path: __dirname + '/fixtures/100x100.jpg', width: 100, height: 100, x: 0, y: 0},
+      {path: __dirname + '/fixtures/200x200.jpg', width: 200, height: 200, x: 0, y: 0},
+      {path: __dirname + '/fixtures/500x500.jpg', width: 500, height: 500, x: 0, y: 0}
     ];
 
     it('should generate data file', function (done) {

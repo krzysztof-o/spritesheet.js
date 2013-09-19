@@ -1,4 +1,4 @@
-var spritesheet = require('../index');
+var spritesheet = require('../spritesheet');
 
 spritesheet(__dirname + '/assets/*', {name: 'generator', 'path': __dirname}, function (err) {
   if (err) throw err;

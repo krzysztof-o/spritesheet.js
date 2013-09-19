@@ -1,8 +1,8 @@
 {
   "name": "spritesheet.js",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Spritesheet generator",
-  "main": "index.js",
+  "main": "spritesheet.js",
   "directories": {
     "example": "example",
     "test": "test"
@@ -12,7 +12,8 @@
     "binpacking": "~0.0.1",
     "handlebars": "~1.0.12",
     "underscore": "~1.5.2",
-    "glob": "~3.2.6"
+    "glob": "~3.2.6",
+    "optimist": "~0.6.0"
   },
   "devDependencies": {
     "mocha" : "*",

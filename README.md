@@ -6,7 +6,12 @@ Spritesheets generator in node.js
 ###Supported spritesheet formats###
 * Starling / Sparrow
 
-###Example###
+###Usage###
+1. Command Line
+```bash
+./spritesheet.js assets/*
+```
+2. Node.js
 ```javascript
 var spritesheet = require('spritesheet.js');
 
@@ -26,7 +31,6 @@ mocha test
 ```
 
 ###TODO:###
-* command line interface
 * trimming images
 * additional spritesheet formats
   * Easel.js

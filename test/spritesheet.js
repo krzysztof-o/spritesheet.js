@@ -1,4 +1,4 @@
-var spritesheet = require('../index');
+var spritesheet = require('../spritesheet');
 var assert = require('assert');
 var expect = require('expect.js');
 var fs = require('fs');
