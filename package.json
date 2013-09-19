@@ -11,7 +11,8 @@
     "async": "~0.2.9",
     "binpacking": "~0.0.1",
     "handlebars": "~1.0.12",
-    "underscore": "~1.5.2"
+    "underscore": "~1.5.2",
+    "glob": "~3.2.6"
   },
   "devDependencies": {
     "mocha" : "*",

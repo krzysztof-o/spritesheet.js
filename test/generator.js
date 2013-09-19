@@ -8,10 +8,10 @@ describe('generator', function () {
   describe('getImagesSizes', function () {
     it('should return image sizes', function (done) {
       var FILES = [
-        {name: __dirname + '/fixtures/50x50.jpg'},
-        {name: __dirname + '/fixtures/100x100.jpg'},
-        {name: __dirname + '/fixtures/200x200.jpg'},
-        {name: __dirname + '/fixtures/500x500.jpg'}
+        {name: __dirname + '/fixtures/50x50.jpg', width: 50, height: 50},
+        {name: __dirname + '/fixtures/100x100.jpg', width: 100, height: 100},
+        {name: __dirname + '/fixtures/200x200.jpg', width: 200, height: 200},
+        {name: __dirname + '/fixtures/500x500.jpg', width: 500, height: 500}
       ];
 
       generator.getImagesSizes(FILES, function (err, files) {
