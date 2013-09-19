@@ -7,7 +7,7 @@ var FILES = [
   __dirname + '/assets/500x500.jpg'
 ];
 
-spritesheet.generate(FILES, {name: 'spritesheet', 'path': __dirname}, function (err) {
+spritesheet(FILES, {name: 'generator', 'path': __dirname}, function (err) {
   if (err) throw err;
 
   console.log('Spritesheet successfully generated in', __dirname);

@@ -1,6 +1,6 @@
 {
   "name": "spritesheet.js",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Spritesheet generator",
   "main": "index.js",
   "directories": {
@@ -13,7 +13,10 @@
     "handlebars": "~1.0.12",
     "underscore": "~1.5.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "mocha" : "*",
+    "expect.js" : "~0.2.0"
+  },
   "scripts": {
     "test": "mocha test"
   },
