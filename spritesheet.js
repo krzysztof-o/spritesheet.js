@@ -21,7 +21,10 @@ if (!module.parent) {
     optimist.showHelp();
     return;
   }
-  generate(argv._, argv);
+  generate(argv._, argv, function(err) {
+    if (err) throw err;
+    console.log('Spritesheet successfully generated');
+  });
 }
 
 /**
