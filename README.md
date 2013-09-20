@@ -25,7 +25,7 @@ Spritesheets generator in node.js
     spritesheet('assets/*.png', {name: 'spritesheet'}, function (err) {
       if (err) throw err;
 
-      console.log('Spritesheet successfully generated in', __dirname);
+      console.log('spritesheet successfully generated');
     });
   ```
   
