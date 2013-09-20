@@ -48,11 +48,11 @@ function generate(files, options, callback) {
   options.name = options.name || 'spritesheet';
   options.imageFile = options.name + '.png';
   options.dataFile = options.name + '.xml';
-  options.path = options.path ? options.path + '/' : '.';
+  options.path = options.path ? options.path + '/' : '';
   options.square = options.square || true;
   options.powerOfTwo = options.powerOfTwo || true;
 
-  if (!fs.existsSync(options.path)) fs.mkdirSync(options.path);
+  if (!fs.existsSync(options.path) && options.path !== '') fs.mkdirSync(options.path);
 
   async.waterfall([
     function (callback) {
