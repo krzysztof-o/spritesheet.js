@@ -40,6 +40,8 @@ if (!module.parent) {
  */
 function generate(files, options, callback) {
   files = Array.isArray(files) ? files : glob.sync(files);
+  if (files.length == 0) return callback(new Error('no files specified'));
+
   files = files.map(function (item) {
     return {
       path: item,
