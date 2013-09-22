@@ -42,4 +42,5 @@ mocha test
 * trimming images
 * additional spritesheet formats
   * Easel.js
+  * PIXI.js
   * cocos2D
