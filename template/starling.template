@@ -1,4 +1,4 @@
-<TextureAtlas imagePath="{{imageFile}}">
+<TextureAtlas imagePath="{{name}}.png">
 {{#each files}}
 	<SubTexture name="{{name}}" x="{{x}}" y="{{y}}" width="{{width}}" height="{{height}}"/>
 {{/each}}

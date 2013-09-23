@@ -82,7 +82,7 @@ describe('generator', function () {
     ];
 
     it('should generate image file', function (done) {
-      var options = {width: 100, height: 100, path: __dirname + '/', imageFile: 'test.png'};
+      var options = {width: 100, height: 100, path: __dirname + '/', name: 'test'};
       generator.generateImage(FILES, options, function (err) {
         expect(err).to.be(null);
         expect(fs.existsSync(__dirname + '/test.png')).to.be.ok();
@@ -104,16 +104,16 @@ describe('generator', function () {
     ];
 
     it('should generate data file', function (done) {
-      var options = {path: __dirname + '/', dataFile: 'test.xml'};
+      var options = {path: __dirname + '/', name: 'test', format: {extension: 'json', template: 'json.template'}};
       generator.generateData(FILES, options, function (err) {
         expect(err).to.be(null);
-        expect(fs.existsSync(__dirname + '/test.xml')).to.be.ok();
+        expect(fs.existsSync(__dirname + '/test.json')).to.be.ok();
         done();
       });
     });
 
     after(function () {
-      fs.unlinkSync(__dirname + '/test.xml');
+      fs.unlinkSync(__dirname + '/test.json');
     });
   });
 });

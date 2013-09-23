@@ -1,6 +1,6 @@
 {
 	"meta": {
-		"image": "{{imageFile}}",
+		"image": "{{name}}.png",
 		"size": { "w":{{width}},"h":{{height}} },
 		"scale": "1"
 	},

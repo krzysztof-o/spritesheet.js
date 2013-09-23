@@ -2,6 +2,7 @@
 var generator = require('./lib/generator');
 var async = require('async');
 var fs = require('fs');
+var path = require('path');
 var glob = require('glob');
 var optimist = require('optimist');
 
@@ -22,10 +23,11 @@ if (!module.parent) {
     .describe('square', 'texture should be square')
     .describe('powerOfTwo', 'texture width and height should be power of two')
     .boolean('square', 'powerOfTwo')
-    .default({square: true, powerOfTwo: true})
+    .default({square: true, powerOfTwo: true, format: 'json', name: 'spritesheet', path: '.'})
     .argv;
 
   if (argv._.length == 0) {
+    console.log('Please specify image files path');
     optimist.showHelp();
     return;
   }
@@ -61,8 +63,7 @@ function generate(files, options, callback) {
   options = options || {};
   options.format = FORMATS[options.format] || FORMATS['json'];
   options.name = options.name || 'spritesheet';
-  options.imageFile = options.name + '.png';
-  options.path = options.path ? options.path + '/' : '';
+  options.path = path.resolve(options.path || '.');
   options.square = options.square || true;
   options.powerOfTwo = options.powerOfTwo || true;
 
