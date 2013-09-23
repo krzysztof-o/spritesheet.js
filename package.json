@@ -7,6 +7,9 @@
     "example": "example",
     "test": "test"
   },
+  "bin" : {
+    "spritesheet" : "./index.js"
+  },
   "dependencies": {
     "async": "~0.2.9",
     "binpacking": "~0.0.1",
