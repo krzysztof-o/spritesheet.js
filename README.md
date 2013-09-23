@@ -31,7 +31,7 @@ Spritesheets generator in node.js
   
 ###Installation###
 1. Install [ImageMagick](http://www.imagemagick.org/)
-2. ```npm install spritesheet.js```
+2. ```npm install spritesheet-js -g```
 
 ###Test###
 ```
