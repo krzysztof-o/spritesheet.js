@@ -7,6 +7,13 @@ var optimist = require('optimist');
 
 module.exports = generate;
 
+var FORMATS = {
+  'json' : {template: 'json.template', extension: 'json'},
+  'pixi.js' : {template: 'json.template', extension: 'json'},
+  'starling' : {template: 'starling.template', extension: 'xml'},
+  'sparrow' : {template: 'starling.template', extension: 'xml'}
+};
+
 if (!module.parent) {
   var argv = optimist.usage('Usage: $0 [options] <files>')
     .describe('format', 'format of spritesheet (starling, sparrow, json, pixi.js)')
@@ -77,10 +84,3 @@ function generate(files, options, callback) {
   ],
     callback);
 }
-
-var FORMATS = {
-  'json' : {template: 'json.template', extension: 'json'},
-  'pixi.js' : {template: 'json.template', extension: 'json'},
-  'starling' : {template: 'starling.template', extension: 'xml'},
-  'sparrow' : {template: 'starling.template', extension: 'xml'}
-};
