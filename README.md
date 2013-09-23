@@ -9,8 +9,8 @@ Spritesheets generator in node.js
 ###Usage###
 1. Command Line
     ```bash
-    $ ./spritesheet.js 
-    Usage: node ./spritesheet.js [options] <files>
+    $ spritesheet-js
+    Usage: spritesheet-js [options] <files>
 
     Options:
       --name        name of generated spritesheet                  
@@ -20,7 +20,7 @@ Spritesheets generator in node.js
     ```
 2. Node.js 
     ```javascript
-    var spritesheet = require('spritesheet.js');
+    var spritesheet = require('spritesheet-js');
     
     spritesheet('assets/*.png', {name: 'spritesheet'}, function (err) {
       if (err) throw err;
