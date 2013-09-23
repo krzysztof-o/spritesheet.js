@@ -1,14 +1,11 @@
 {
-  "name": "spritesheet.js",
-  "version": "0.2.3",
+  "name": "spritesheet",
+  "version": "0.2.4",
   "description": "Spritesheet generator",
-  "main": "spritesheet.js",
+  "main": "index.js",
   "directories": {
     "example": "example",
     "test": "test"
-  },
-  "bin" : { 
-    "spritesheet.js" : "./spritesheet.js"
   },
   "dependencies": {
     "async": "~0.2.9",
