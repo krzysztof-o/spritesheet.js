@@ -6,7 +6,7 @@
 	},
 	"frames": {
 	{{#each files}}
-		"{{name}}":
+		"{{name}}{{extension}}":
 		{
 			"frame": { "x":{{x}},"y":{{y}},"w":{{width}},"h":{{height}} },
 			"rotated": false,

@@ -56,7 +56,8 @@ function generate(files, options, callback) {
   files = files.map(function (item) {
     return {
       path: item,
-      name: item.substring(item.lastIndexOf('/') + 1, item.lastIndexOf('.'))
+      name: item.substring(item.lastIndexOf('/') + 1, item.lastIndexOf('.')),
+      extension: path.extname(item)
     };
   });
 
