@@ -1,0 +1,13 @@
+{
+	"images": ["{{name}}.png"],
+	"frames": [
+		{{#each files}}
+	        [{{x}}, {{y}}, {{width}}, {{height}}]{{#unless isLast}},{{/unless}}
+	    {{/each}}
+	],
+	"animations": {
+		{{#each files}}
+	            "{{name}}":[{{@index}}]{{#unless isLast}},{{/unless}}
+	    {{/each}}
+	}
+}
