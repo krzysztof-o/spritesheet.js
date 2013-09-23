@@ -26,7 +26,7 @@ Spritesheet (a.k.a. Texture Atlas) generator in node.js
     ```javascript
     var spritesheet = require('spritesheet-js');
     
-    spritesheet('assets/*.png', {name: 'spritesheet'}, function (err) {
+    spritesheet('assets/*.png', {name: 'spritesheet', format: 'json'}, function (err) {
       if (err) throw err;
 
       console.log('spritesheet successfully generated');
