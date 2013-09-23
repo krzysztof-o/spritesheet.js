@@ -1,10 +1,11 @@
 spritesheet.js
 ==============
 
-Spritesheets generator in node.js
+Spritesheet (a.k.a. Texture Atlas) generator in node.js
 
 ###Supported spritesheet formats###
 * Starling / Sparrow
+* JSON (i.e. PIXI.js)
 
 ###Usage###
 1. Command Line
@@ -13,10 +14,11 @@ Spritesheets generator in node.js
     Usage: spritesheet-js [options] <files>
 
     Options:
-      --name        name of generated spritesheet                  
-      --path        path to export directory                       
-      --square      texture should be square                         [default: true]
-      --powerOfTwo  texture width and height should be power of two  [default: true]
+      --format      format of spritesheet (starling, sparrow, json, pixi.js)
+      --name        name of generated spritesheet
+      --path        path to export directory
+      --square      texture should be square                                  [default: true]
+      --powerOfTwo  texture width and height should be power of two           [default: true]
     ```
 2. Node.js 
     ```javascript
@@ -42,5 +44,4 @@ mocha test
 * trimming images
 * additional spritesheet formats
   * Easel.js
-  * PIXI.js
   * cocos2D
