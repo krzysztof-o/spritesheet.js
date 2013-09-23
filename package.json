@@ -1,5 +1,5 @@
 {
-  "name": "spritesheet",
+  "name": "spritesheet-js",
   "version": "0.2.4",
   "description": "Spritesheet generator",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "test": "test"
   },
   "bin" : {
-    "spritesheet" : "./index.js"
+    "spritesheet-js" : "./index.js"
   },
   "dependencies": {
     "async": "~0.2.9",
