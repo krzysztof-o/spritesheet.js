@@ -1,5 +1,5 @@
 <TextureAtlas imagePath="{{name}}.png">
-{{#each files}}
+{{#files}}
 	<SubTexture name="{{name}}" x="{{x}}" y="{{y}}" width="{{width}}" height="{{height}}"/>
-{{/each}}
+{{/files}}
 </TextureAtlas>

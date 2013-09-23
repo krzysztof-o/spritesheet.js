@@ -7,6 +7,7 @@ Spritesheet (a.k.a. Texture Atlas) generator in node.js
 * Starling / Sparrow
 * JSON (i.e. PIXI.js)
 * Easel.js
+* cocos2d
 
 ###Usage###
 1. Command Line
@@ -15,7 +16,7 @@ Spritesheet (a.k.a. Texture Atlas) generator in node.js
     Usage: spritesheet-js [options] <files>
 
     Options:
-      --format      format of spritesheet (starling, sparrow, json, pixi.js, easel.js)
+      --format      format of spritesheet (starling, sparrow, json, pixi.js, easel.js, cocos2d)
       --name        name of generated spritesheet
       --path        path to export directory
       --square      texture should be square                                  [default: true]
@@ -43,5 +44,3 @@ mocha test
 
 ###TODO:###
 * trimming images
-* additional spritesheet formats
-  * cocos2D

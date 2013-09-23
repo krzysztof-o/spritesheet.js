@@ -1,19 +1,19 @@
 {
 	"meta": {
 		"image": "{{name}}.png",
-		"size": { "w":{{width}},"h":{{height}} },
+		"size": {"w":{{width}},"h":{{height}}},
 		"scale": "1"
 	},
 	"frames": {
-	{{#each files}}
+	{{#files}}
 		"{{name}}{{extension}}":
 		{
-			"frame": { "x":{{x}},"y":{{y}},"w":{{width}},"h":{{height}} },
+			"frame": {"x":{{x}},"y":{{y}},"w":{{width}},"h":{{height}}},
 			"rotated": false,
 			"trimmed": false,
-			"spriteSourceSize": { "x":0,"y":0,"w":{{width}},"h":{{height}} },
-			"sourceSize": { "w":{{width}},"h":{{height}} }
-		}{{#unless isLast}},{{/unless}}
-	{{/each}}
+			"spriteSourceSize": {"x":0,"y":0,"w":{{width}},"h":{{height}}},
+			"sourceSize": {"w":{{width}},"h":{{height}}}
+		}{{^isLast}},{{/isLast}}
+	{{/files}}
 	}
 }

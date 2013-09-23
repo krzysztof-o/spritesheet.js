@@ -13,12 +13,13 @@ var FORMATS = {
   'pixi.js' : {template: 'json.template', extension: 'json'},
   'starling' : {template: 'starling.template', extension: 'xml'},
   'sparrow' : {template: 'starling.template', extension: 'xml'},
-  'easel.js' : {template: 'easeljs.template', extension: 'json'}
+  'easel.js' : {template: 'easeljs.template', extension: 'json'},
+  'cocos2d' : {template: 'cocos2d.template', extension: 'plist'}
 };
 
 if (!module.parent) {
   var argv = optimist.usage('Usage: $0 [options] <files>')
-    .describe('format', 'format of spritesheet (starling, sparrow, json, pixi.js, easel.js)')
+    .describe('format', 'format of spritesheet (starling, sparrow, json, pixi.js, easel.js, cocos2d)')
     .describe('name', 'name of generated spritesheet')
     .describe('path', 'path to export directory')
     .describe('square', 'texture should be square')
@@ -43,7 +44,7 @@ if (!module.parent) {
  * @param {string} files pattern of files images files
  * @param {string[]} files paths to image files
  * @param {object} options
- * @param {string} options.format format of spritesheet (starling, sparrow, json, pixi.js, easel.js)
+ * @param {string} options.format format of spritesheet (starling, sparrow, json, pixi.js, easel.js, cocos2d)
  * @param {string} options.name name of the generated spritesheet
  * @param {string} options.path path to the generated spritesheet
  * @param {boolean} options.square texture should be square
