@@ -19,17 +19,33 @@ var FORMATS = {
 
 if (!module.parent) {
   var argv = optimist.usage('Usage: $0 [options] <files>')
-    .describe('format', 'format of spritesheet (starling, sparrow, json, pixi.js, easel.js, cocos2d)')
-    .describe('name', 'name of generated spritesheet')
-    .describe('path', 'path to export directory')
-    .describe('square', 'texture should be square')
-    .describe('powerOfTwo', 'texture width and height should be power of two')
-    .boolean('square', 'powerOfTwo')
-    .default({square: true, powerOfTwo: true, format: 'json', name: 'spritesheet', path: '.'})
+	.options('f', {
+		alias : 'format',
+		describe: 'format of spritesheet (starling, sparrow, json, pixi.js, easel.js, cocos2d)',
+		default : 'json'
+	})
+	.options('n', {
+		alias : 'name',
+		describe: 'name of generated spritesheet',
+		default : 'spritesheet'
+	})
+	.options('p', {
+		alias : 'path',
+		describe: 'path to export directory',
+		default : '.'
+	})
+	.options('square', {
+		describe: 'texture should be s square',
+		default : true
+	})
+	.options('powerOfTwo', {
+		describe: 'texture width and height should be power of two',
+		default : true
+	})
+	.demand(1)
     .argv;
 
   if (argv._.length == 0) {
-    console.log('Please specify image files path');
     optimist.showHelp();
     return;
   }
