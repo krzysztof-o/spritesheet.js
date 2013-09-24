@@ -1,6 +1,6 @@
 {
   "name": "spritesheet-js",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Spritesheet generator",
   "main": "index.js",
   "directories": {
@@ -34,6 +34,10 @@
     "texture",
     "starling",
     "sparrow",
+    "pixi.js",
+    "json",
+    'cocos2d',
+    "easel.js",
     "generator"
   ],
   "author": "Krzysztof Opalka",
