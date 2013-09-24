@@ -1,0 +1,8 @@
+example
+!example/generate_all.sh
+
+.git*
+npm-debug.log
+.idea
+*.iml
+.DS_Store

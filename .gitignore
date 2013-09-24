@@ -2,5 +2,4 @@ node_modules
 npm-debug.log
 .idea
 *.iml
-export
-assets
+.DS_Store
