@@ -10,7 +10,11 @@ Spritesheet (a.k.a. Texture Atlas) generator in node.js
 * cocos2d
 
 ###Usage###
-1. Command Line
+1. **Command Line**
+    ```bash
+    $ spritesheet-js -f json assets/*.png
+    ```
+    Options:
     ```bash
     $ spritesheet-js
     Usage: spritesheet-js [options] <files>
@@ -22,7 +26,7 @@ Spritesheet (a.k.a. Texture Atlas) generator in node.js
 	  --square      texture should be s square                                                   [default: true]
 	  --powerOfTwo  texture width and height should be power of two                              [default: true]
     ```
-2. Node.js 
+2. **Node.js**
     ```javascript
     var spritesheet = require('spritesheet-js');
     
