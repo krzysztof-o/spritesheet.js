@@ -49,5 +49,5 @@ mocha test
 ###TODO:###
 * trimming images
 
-==============
+--------------
 Thanks [Przemysław Piekarski](http://www.behance.net/piekarski) for logo design and assets in examples.
