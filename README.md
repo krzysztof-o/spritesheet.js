@@ -1,7 +1,7 @@
-spritesheet.js
+![spritesheet.js](http://i.imgur.com/RcHZ2qZ.png)
 ==============
 
-Spritesheet (a.k.a. Texture Atlas) generator in node.js
+Spritesheet.js is command-line spritesheet (a.k.a. Texture Atlas) generator written in node.js.
 
 ###Supported spritesheet formats###
 * Starling / Sparrow
@@ -48,3 +48,6 @@ mocha test
 
 ###TODO:###
 * trimming images
+
+==============
+Thanks [Przemysław Piekarski](http://www.behance.net/piekarski) for logo design and assets in examples.
