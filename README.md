@@ -30,7 +30,7 @@ Spritesheet.js is command-line spritesheet (a.k.a. Texture Atlas) generator writ
     ```javascript
     var spritesheet = require('spritesheet-js');
     
-    spritesheet('assets/*.png', {name: 'spritesheet'}, function (err) {
+    spritesheet('assets/*.png', {format: 'json'}, function (err) {
       if (err) throw err;
 
       console.log('spritesheet successfully generated');
