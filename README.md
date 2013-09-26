@@ -37,9 +37,12 @@ Spritesheet.js is command-line spritesheet (a.k.a. Texture Atlas) generator writ
       console.log('spritesheet successfully generated');
     });
   ```
-###Trimming/cropping###
+  
+###Trimming / Cropping###
 Spritesheet.js can remove transparent whitespace around images. Thanks to that you can pack more assets into one spritesheet and it makes rendering a little bit faster.
+
 *NOTE: Some libraries such as Easel.js or PIXI.js dont't support this feature.*
+![Trimming / Cropping](http://i.imgur.com/76OokJU.png)
 
 ###Installation###
 1. Install [ImageMagick](http://www.imagemagick.org/)
