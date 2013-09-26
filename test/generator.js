@@ -14,7 +14,7 @@ describe('generator', function () {
         {path: __dirname + '/fixtures/500x500.jpg', width: 500, height: 500}
       ];
 
-      generator.getImagesSizes(FILES, function (err, files) {
+      generator.getImagesSizes(FILES, {}, function (err, files) {
         expect(err).to.be(null);
 
         expect(files[0].width).to.equal(50);

@@ -1,5 +1,5 @@
 <TextureAtlas imagePath="{{name}}.png">
 {{#files}}
-	<SubTexture name="{{name}}" x="{{x}}" y="{{y}}" width="{{width}}" height="{{height}}"/>
+	<SubTexture name="{{name}}" x="{{x}}" y="{{y}}" width="{{width}}" height="{{height}}" {{#trimmed}}frameX="{{trim.frameX}}" frameY="{{trim.frameY}}" frameWidth="{{trim.width}}" frameHeight="{{trim.height}}"{{/trimmed}}/>
 {{/files}}
 </TextureAtlas>

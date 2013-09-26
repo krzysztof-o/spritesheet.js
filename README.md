@@ -7,7 +7,7 @@ Spritesheet.js is command-line spritesheet (a.k.a. Texture Atlas) generator writ
 * Starling / Sparrow
 * JSON (i.e. PIXI.js)
 * Easel.js
-* cocos2d
+* cocos2d (experimental)
 
 ###Usage###
 1. **Command Line**
@@ -23,6 +23,7 @@ Spritesheet.js is command-line spritesheet (a.k.a. Texture Atlas) generator writ
 	  -f, --format  format of spritesheet (starling, sparrow, json, pixi.js, easel.js, cocos2d)  [default: "json"]
 	  -n, --name    name of generated spritesheet                                                [default: "spritesheet"]
 	  -p, --path    path to export directory                                                     [default: "."]
+	  --trim        removes transparent whitespaces around images                                [default: true]
 	  --square      texture should be s square                                                   [default: true]
 	  --powerOfTwo  texture width and height should be power of two                              [default: true]
     ```
@@ -36,7 +37,10 @@ Spritesheet.js is command-line spritesheet (a.k.a. Texture Atlas) generator writ
       console.log('spritesheet successfully generated');
     });
   ```
-  
+###Trimming/cropping###
+Spritesheet.js can remove transparent whitespace around images. Thanks to that you can pack more assets into one spritesheet and it makes rendering a little bit faster.
+*NOTE: Some libraries such as Easel.js or PIXI.js dont't support this feature.*
+
 ###Installation###
 1. Install [ImageMagick](http://www.imagemagick.org/)
 2. ```npm install spritesheet-js -g```
@@ -45,9 +49,6 @@ Spritesheet.js is command-line spritesheet (a.k.a. Texture Atlas) generator writ
 ```
 mocha test
 ```
-
-###TODO:###
-* trimming images
 
 --------------
 Thanks [Przemysław Piekarski](http://www.behance.net/piekarski) for logo design and assets in examples.
