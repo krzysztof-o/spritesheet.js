@@ -22,7 +22,7 @@ Spritesheet.js is command-line spritesheet (a.k.a. Texture Atlas) generator writ
 	Options:
 	  -f, --format  format of spritesheet (starling, sparrow, json, pixi.js, easel.js, cocos2d)  [default: "json"]
 	  -n, --name    name of generated spritesheet                                                [default: "spritesheet"]
-	  -p, --path    path to export directory                                                     [default: "."]
+	  -p, --path    path to output directory                                                     [default: "."]
 	  --trim        removes transparent whitespaces around images                                [default: true]
 	  --square      texture should be s square                                                   [default: true]
 	  --powerOfTwo  texture width and height should be power of two                              [default: true]
