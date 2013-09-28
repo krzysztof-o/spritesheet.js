@@ -36,15 +36,18 @@ if (!module.parent) {
     })
     .options('trim', {
       describe: 'removes transparent whitespaces around images',
-      default: true
+      default: true,
+      boolean: true
     })
     .options('square', {
       describe: 'texture should be s square',
-      default: true
+      default: true,
+      boolean: true
     })
     .options('powerOfTwo', {
       describe: 'texture width and height should be power of two',
-      default: true
+      default: true,
+      boolean: true
     })
     .demand(1)
     .argv;

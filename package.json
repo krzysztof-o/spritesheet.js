@@ -1,6 +1,6 @@
 {
   "name": "spritesheet-js",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "Spritesheet generator",
   "main": "index.js",
   "directories": {
