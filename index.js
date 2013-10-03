@@ -36,18 +36,22 @@ if (!module.parent) {
     })
     .options('trim', {
       describe: 'removes transparent whitespaces around images',
-      default: true,
+      default: false,
       boolean: true
     })
     .options('square', {
       describe: 'texture should be s square',
-      default: true,
+      default: false,
       boolean: true
     })
     .options('powerOfTwo', {
       describe: 'texture width and height should be power of two',
-      default: true,
+      default: false,
       boolean: true
+    })
+    .options('algorithm', {
+      describe: 'packing algorithm: growing-binpacking (default), binpacking (requires passing width and height options), vertical or horizontal',
+      default: 'growing-binpacking'
     })
     .demand(1)
     .argv;
@@ -73,6 +77,7 @@ if (!module.parent) {
  * @param {boolean} options.trim removes transparent whitespaces around images
  * @param {boolean} options.square texture should be square
  * @param {boolean} options.powerOfTwo texture's size (both width and height) should be a power of two
+ * @param {boolean} options.algorithm packing algorithm: growing-binpacking (default), binpacking (requires passing width and height options), vertical or horizontal
  * @param {function} callback
  */
 function generate(files, options, callback) {
@@ -92,9 +97,10 @@ function generate(files, options, callback) {
   options.format = FORMATS[options.format] || FORMATS['json'];
   options.name = options.name || 'spritesheet';
   options.path = path.resolve(options.path || '.');
-  options.square = options.hasOwnProperty('square') ? options.square : true;
-  options.powerOfTwo = options.hasOwnProperty('powerOfTwo') ? options.powerOfTwo : true;
+  options.square = options.hasOwnProperty('square') ? options.square : false;
+  options.powerOfTwo = options.hasOwnProperty('powerOfTwo') ? options.powerOfTwo : false;
   options.trim = options.hasOwnProperty('trim') ? options.trim : options.format.trim;
+  options.algorithm = options.hasOwnProperty('algorithm') ? options.algorithm : 'growing-binpacking';
 
 
   if (!fs.existsSync(options.path) && options.path !== '') fs.mkdirSync(options.path);

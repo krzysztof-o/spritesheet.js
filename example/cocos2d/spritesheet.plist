@@ -492,7 +492,7 @@
 	        <key>realTextureFileName</key>
 	        <string>spritesheet.png</string>
 	        <key>size</key>
-	        <string>{1024,1024}</string>
+	        <string>{764,761}</string>
 	        <key>textureFileName</key>
 	        <string>spritesheet.png</string>
 	    </dict>
