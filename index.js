@@ -88,7 +88,7 @@ function generate(files, options, callback) {
     item = path.resolve(item).replace(/ /g, '\\ ');
     return {
       path: item,
-      name: item.substring(item.lastIndexOf(path.sep) + path.sep.length, item.lastIndexOf('.')),
+      name: item.substring(item.lastIndexOf('/') + 1, item.lastIndexOf('.')),
       extension: path.extname(item)
     };
   });
