@@ -12,7 +12,7 @@ Spritesheet.js is command-line spritesheet (a.k.a. Texture Atlas) generator writ
 ###Usage###
 1. **Command Line**
     ```bash
-    $ spritesheet-js -f json assets/*.png
+    $ spritesheet-js assets/*.png
     ```
     Options:
     ```bash
