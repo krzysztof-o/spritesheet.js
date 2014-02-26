@@ -85,7 +85,7 @@ function generate(files, options, callback) {
   if (files.length == 0) return callback(new Error('no files specified'));
 
   files = files.map(function (item) {
-    item = path.resolve(item).replace(/ /g, '\\ ');
+    item = path.resolve(item);
     return {
       path: item,
       name: item.substring(item.lastIndexOf('/') + 1, item.lastIndexOf('.')),
