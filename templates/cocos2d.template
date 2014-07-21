@@ -2,12 +2,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
+<dict>
+    <key>frames</key>
     <dict>
-        <key>frames</key>
+    <%#files%>
+    <%#trimmed%>
+        <key><%name%><%extension%></key>
         <dict>
-        <%#files%>
-        <%#trimmed%>
-	        <key><%name%><%extension%></key>
+        	<key>frame</key>
 	        <string>{{<%x%>,<%y%>},{<%width%>,<%height%>}}</string>
 	        <key>offset</key>
 	        <string>{<%trim.offsetX%>,<%trim.offsetY%>}</string>
@@ -17,9 +19,12 @@
 	        <string>{{<%trim.x%>,<%trim.y%>},{<%trim.width%>,<%trim.height%>}}</string>
 	        <key>sourceSize</key>
 	        <string>{<%trim.width%>,<%trim.height%>}</string>
-	    <%/trimmed%>
-	    <%^trimmed%>
-	        <key><%name%><%extension%></key>
+	    </dict>
+    <%/trimmed%>
+    <%^trimmed%>
+    	<key><%name%><%extension%></key>
+    	<dict>
+    		<key>frame</key>
 	        <string>{{<%x%>,<%y%>},{<%width%>,<%height%>}}</string>
 	        <key>offset</key>
 	        <string>{0,0}</string>
@@ -29,19 +34,20 @@
 	        <string>{{0,0},{<%width%>,<%height%>}}</string>
 	        <key>sourceSize</key>
 	        <string>{<%width%>,<%height%>}</string>
-	    <%/trimmed%>
-        <%/files%>
-	    </dict>
-	    <key>metadata</key>
-	    <dict>
-	        <key>format</key>
-	        <integer>2</integer>
-	        <key>realTextureFileName</key>
-	        <string><%name%>.png</string>
-	        <key>size</key>
-	        <string>{<%width%>,<%height%>}</string>
-	        <key>textureFileName</key>
-	        <string><%name%>.png</string>
-	    </dict>
+        </dict>
+    <%/trimmed%>
+    <%/files%>
     </dict>
+    <key>metadata</key>
+    <dict>
+        <key>format</key>
+        <integer>2</integer>
+        <key>realTextureFileName</key>
+        <string><%name%>.png</string>
+        <key>size</key>
+        <string>{<%width%>,<%height%>}</string>
+        <key>textureFileName</key>
+        <string><%name%>.png</string>
+    </dict>
+</dict>
 </plist>
