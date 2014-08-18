@@ -34,6 +34,11 @@ if (!module.parent) {
       describe: 'path to export directory',
       default: '.'
     })
+    .options('fullpath', {
+      describe: 'include path in file name',
+      default: false,
+      boolean: true
+    })
     .options('trim', {
       describe: 'removes transparent whitespaces around images',
       default: false,
@@ -74,6 +79,7 @@ if (!module.parent) {
  * @param {string} options.format format of spritesheet (starling, sparrow, json, pixi.js, easel.js, cocos2d)
  * @param {string} options.name name of the generated spritesheet
  * @param {string} options.path path to the generated spritesheet
+ * @param {boolean} options.fullpath include path in file name
  * @param {boolean} options.trim removes transparent whitespaces around images
  * @param {boolean} options.square texture should be square
  * @param {boolean} options.powerOfTwo texture's size (both width and height) should be a power of two
@@ -84,23 +90,31 @@ function generate(files, options, callback) {
   files = Array.isArray(files) ? files : glob.sync(files);
   if (files.length == 0) return callback(new Error('no files specified'));
 
-  files = files.map(function (item) {
-    item = path.resolve(item);
-    return {
-      path: item,
-      name: item.substring(item.lastIndexOf(path.sep) + 1, item.lastIndexOf('.')),
-      extension: path.extname(item)
-    };
-  });
-
   options = options || {};
   options.format = FORMATS[options.format] || FORMATS['json'];
   options.name = options.name || 'spritesheet';
   options.path = path.resolve(options.path || '.');
+  options.fullpath = options.hasOwnProperty('fullpath') ? options.fullpath : false;
   options.square = options.hasOwnProperty('square') ? options.square : false;
   options.powerOfTwo = options.hasOwnProperty('powerOfTwo') ? options.powerOfTwo : false;
   options.trim = options.hasOwnProperty('trim') ? options.trim : options.format.trim;
   options.algorithm = options.hasOwnProperty('algorithm') ? options.algorithm : 'growing-binpacking';
+
+files = files.map(function (item) {
+    resolvedItem = path.resolve(item);
+    var name = "";
+    if (options.fullpath) {
+      name = item.substring(0, item.lastIndexOf("."));
+    }
+    else {
+      name = resolvedItem.substring(resolvedItem.lastIndexOf('/') + 1, resolvedItem.lastIndexOf('.'));
+    }
+    return {
+      path: resolvedItem,
+      name: name,
+      extension: path.extname(resolvedItem)
+    };
+  });
 
 
   if (!fs.existsSync(options.path) && options.path !== '') fs.mkdirSync(options.path);

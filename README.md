@@ -7,7 +7,7 @@ Spritesheet.js is command-line spritesheet (a.k.a. Texture Atlas) generator writ
 * Starling / Sparrow
 * JSON (i.e. PIXI.js)
 * Easel.js
-* cocos2d
+* cocos2d (experimental)
 
 ###Usage###
 1. **Command Line**
@@ -20,14 +20,15 @@ Spritesheet.js is command-line spritesheet (a.k.a. Texture Atlas) generator writ
     Usage: spritesheet-js [options] <files>
 
 	Options:
-      -f, --format  format of spritesheet (starling, sparrow, json, pixi.js, easel.js, cocos2d)                                                      [default: "json"]
-      -n, --name    name of generated spritesheet                                                                                                    [default: "spritesheet"]
-      -p, --path    path to export directory                                                                                                         [default: "."]
-      --trim        removes transparent whitespaces around images                                                                                    [default: false]
-      --square      texture should be s square                                                                                                       [default: false]
-      --powerOfTwo  texture width and height should be power of two                                                                                  [default: false]
-      --algorithm   packing algorithm: growing-binpacking (default), binpacking (requires passing width and height options), vertical or horizontal  [default: "growing-binpacking"]
-
+    ```
+    -f, --format  format of spritesheet (starling, sparrow, json, pixi.js, easel.js, cocos2d)                                                      [default: "json"]
+    -n, --name    name of generated spritesheet                                                                                                    [default: "spritesheet"]
+    -p, --path    path to export directory                                                                                                         [default: "."]
+    --fullpath    include path in file name                                                                                                        [default: false]
+    --trim        removes transparent whitespaces around images                                                                                    [default: false]
+    --square      texture should be s square                                                                                                       [default: false]
+    --powerOfTwo  texture width and height should be power of two                                                                                  [default: false]
+    --algorithm   packing algorithm: growing-binpacking (default), binpacking (requires passing width and height options), vertical or horizontal  [default: "growing-binpacking"]
     ```
 2. **Node.js**
     ```javascript

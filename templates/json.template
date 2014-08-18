@@ -1,12 +1,12 @@
 {
 	"meta": {
-		"image": "{{name}}.png",
+		"image": "{{{name}}}.png",
 		"size": {"w":{{width}},"h":{{height}}},
 		"scale": "1"
 	},
 	"frames": {
 	{{#files}}
-		"{{name}}{{extension}}":
+		"{{{name}}}{{extension}}":
 		{
 		{{#trimmed}}
 			"frame": {"x":{{x}},"y":{{y}},"w":{{width}},"h":{{height}}},
