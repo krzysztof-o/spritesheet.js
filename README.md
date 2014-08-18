@@ -18,9 +18,8 @@ Spritesheet.js is command-line spritesheet (a.k.a. Texture Atlas) generator writ
     ```bash
     $ spritesheet-js
     Usage: spritesheet-js [options] <files>
-
+	
 	Options:
-    ```
     -f, --format  format of spritesheet (starling, sparrow, json, pixi.js, easel.js, cocos2d)                                                      [default: "json"]
     -n, --name    name of generated spritesheet                                                                                                    [default: "spritesheet"]
     -p, --path    path to export directory                                                                                                         [default: "."]
