@@ -99,6 +99,7 @@ function generate(files, options, callback) {
   options = options || {};
   options.format = FORMATS[options.format] || FORMATS['json'];
   options.name = options.name || 'spritesheet';
+  options.spritesheetName = options.name;
   options.path = path.resolve(options.path || '.');
   options.fullpath = options.hasOwnProperty('fullpath') ? options.fullpath : false;
   options.square = options.hasOwnProperty('square') ? options.square : false;

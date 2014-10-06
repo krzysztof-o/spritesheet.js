@@ -1,8 +1,8 @@
 {{#files}}
-.{{#cssAutoName}}{{{name}}}{{/cssAutoName}} {
+.{{#cssAutoName}}{{/cssAutoName}} {
     width: {{width}}px;
     height: {{height}}px;
-    background: url("{{{prefix}}}{{{name}}}{{extension}}") -{{x}}px -{{y}}px;
+    background: url("{{{prefix}}}{{{spritesheetName}}}.png") -{{x}}px -{{y}}px;
 }
 
 {{/files}}
