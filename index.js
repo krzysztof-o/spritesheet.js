@@ -14,7 +14,8 @@ var FORMATS = {
   'starling': {template: 'starling.template', extension: 'xml', trim: true},
   'sparrow': {template: 'starling.template', extension: 'xml', trim: true},
   'easel.js': {template: 'easeljs.template', extension: 'json', trim: false},
-  'cocos2d': {template: 'cocos2d.template', extension: 'plist', trim: false}
+  'cocos2d': {template: 'cocos2d.template', extension: 'plist', trim: false},
+  'css': {template: 'css.template', extension: 'css', trim: false}
 };
 
 if (!module.parent) {
@@ -38,6 +39,10 @@ if (!module.parent) {
       describe: 'include path in file name',
       default: false,
       boolean: true
+    })
+    .options('prefix', {
+      describe: 'prefix for image paths (css format only)',
+      default: ""
     })
     .options('trim', {
       describe: 'removes transparent whitespaces around images',
@@ -79,6 +84,7 @@ if (!module.parent) {
  * @param {string} options.format format of spritesheet (starling, sparrow, json, pixi.js, easel.js, cocos2d)
  * @param {string} options.name name of the generated spritesheet
  * @param {string} options.path path to the generated spritesheet
+ * @param {string} options.prefix prefix for image paths (css format only)
  * @param {boolean} options.fullpath include path in file name
  * @param {boolean} options.trim removes transparent whitespaces around images
  * @param {boolean} options.square texture should be square
@@ -99,6 +105,7 @@ function generate(files, options, callback) {
   options.powerOfTwo = options.hasOwnProperty('powerOfTwo') ? options.powerOfTwo : false;
   options.trim = options.hasOwnProperty('trim') ? options.trim : options.format.trim;
   options.algorithm = options.hasOwnProperty('algorithm') ? options.algorithm : 'growing-binpacking';
+  options.prefix = options.hasOwnProperty('prefix') ? options.prefix : '';
 
 files = files.map(function (item) {
     resolvedItem = path.resolve(item);
