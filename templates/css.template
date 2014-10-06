@@ -1,0 +1,8 @@
+{{#files}}
+.{{#cssAutoName}}{{{name}}}{{/cssAutoName}} {
+    width: {{width}}px;
+    height: {{height}}px;
+    background: url("{{{prefix}}}{{{name}}}{{extension}}") -{{x}}px -{{y}}px;
+}
+
+{{/files}}

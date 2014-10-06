@@ -1,0 +1,288 @@
+	.character_evil {
+        width: 286;
+        height: 355;
+        background: url("character_evil.png") -0px -0px;
+    }
+
+	.character_hero {
+        width: 203;
+        height: 346;
+        background: url("character_hero.png") -286px -0px;
+    }
+
+	.ship_giant_full {
+        width: 199;
+        height: 218;
+        background: url("ship_giant_full.png") -489px -0px;
+    }
+
+	.fx_particle_crash_03 {
+        width: 287;
+        height: 174;
+        background: url("fx_particle_crash_03.png") -0px -355px;
+    }
+
+	.fx_particle_pow_01 {
+        width: 111;
+        height: 170;
+        background: url("fx_particle_pow_01.png") -287px -355px;
+    }
+
+	.ship_giant_roof {
+        width: 134;
+        height: 142;
+        background: url("ship_giant_roof.png") -398px -355px;
+    }
+
+	.fx_particle_crash_01 {
+        width: 187;
+        height: 134;
+        background: url("fx_particle_crash_01.png") -489px -218px;
+    }
+
+	.ship_giant_head {
+        width: 82;
+        height: 129;
+        background: url("ship_giant_head.png") -532px -355px;
+    }
+
+	.fx_particle_boom_01 {
+        width: 190;
+        height: 120;
+        background: url("fx_particle_boom_01.png") -0px -529px;
+    }
+
+	.fx_particle_bomb {
+        width: 23;
+        height: 115;
+        background: url("fx_particle_bomb.png") -614px -355px;
+    }
+
+	.fx_particle_boom_02 {
+        width: 161;
+        height: 102;
+        background: url("fx_particle_boom_02.png") -190px -529px;
+    }
+
+	.ship_giant_body {
+        width: 108;
+        height: 95;
+        background: url("ship_giant_body.png") -351px -529px;
+    }
+
+	.turret_enemy_full {
+        width: 115;
+        height: 94;
+        background: url("turret_enemy_full.png") -459px -529px;
+    }
+
+	.fx_particle_pow_02 {
+        width: 49;
+        height: 84;
+        background: url("fx_particle_pow_02.png") -637px -355px;
+    }
+
+	.fx_particle_crash_02 {
+        width: 99;
+        height: 82;
+        background: url("fx_particle_crash_02.png") -574px -529px;
+    }
+
+	.fx_particle_smoke_02 {
+        width: 76;
+        height: 75;
+        background: url("fx_particle_smoke_02.png") -688px -0px;
+    }
+
+	.fx_particle_smoke_01 {
+        width: 46;
+        height: 73;
+        background: url("fx_particle_smoke_01.png") -688px -75px;
+    }
+
+	.turret_enemy_gun {
+        width: 48;
+        height: 72;
+        background: url("turret_enemy_gun.png") -688px -148px;
+    }
+
+	.ship_jet_full {
+        width: 138;
+        height: 64;
+        background: url("ship_jet_full.png") -0px -649px;
+    }
+
+	.turret_enemy_base {
+        width: 115;
+        height: 62;
+        background: url("turret_enemy_base.png") -138px -649px;
+    }
+
+	.ship_enemy_full {
+        width: 138;
+        height: 61;
+        background: url("ship_enemy_full.png") -253px -649px;
+    }
+
+	.fx_particle_ratata_01 {
+        width: 89;
+        height: 59;
+        background: url("fx_particle_ratata_01.png") -391px -649px;
+    }
+
+	.fx_particle_boom_03 {
+        width: 92;
+        height: 59;
+        background: url("fx_particle_boom_03.png") -480px -649px;
+    }
+
+	.fx_particle_engine_01 {
+        width: 49;
+        height: 55;
+        background: url("fx_particle_engine_01.png") -688px -220px;
+    }
+
+	.fx_particle_engine_04 {
+        width: 46;
+        height: 49;
+        background: url("fx_particle_engine_04.png") -688px -275px;
+    }
+
+	.fx_particle_ratata_02 {
+        width: 85;
+        height: 49;
+        background: url("fx_particle_ratata_02.png") -572px -649px;
+    }
+
+	.ship_giant_floor {
+        width: 117;
+        height: 48;
+        background: url("ship_giant_floor.png") -0px -713px;
+    }
+
+	.ship_enemy_body {
+        width: 124;
+        height: 46;
+        background: url("ship_enemy_body.png") -117px -713px;
+    }
+
+	.fx_particle_pow_03 {
+        width: 59;
+        height: 45;
+        background: url("fx_particle_pow_03.png") -688px -324px;
+    }
+
+	.ship_jet_head {
+        width: 46;
+        height: 43;
+        background: url("ship_jet_head.png") -688px -369px;
+    }
+
+	.ship_jet_body {
+        width: 82;
+        height: 43;
+        background: url("ship_jet_body.png") -657px -649px;
+    }
+
+	.ship_giant_engine {
+        width: 25;
+        height: 42;
+        background: url("ship_giant_engine.png") -734px -75px;
+    }
+
+	.fx_particle_ratata_03 {
+        width: 62;
+        height: 42;
+        background: url("fx_particle_ratata_03.png") -688px -412px;
+    }
+
+	.fx_particle_crash_04 {
+        width: 73;
+        height: 36;
+        background: url("fx_particle_crash_04.png") -688px -454px;
+    }
+
+	.ship_enemy_wing {
+        width: 68;
+        height: 34;
+        background: url("ship_enemy_wing.png") -688px -490px;
+    }
+
+	.fx_particle_engine_03 {
+        width: 41;
+        height: 34;
+        background: url("fx_particle_engine_03.png") -688px -524px;
+    }
+
+	.fx_particle_smoke_03 {
+        width: 37;
+        height: 29;
+        background: url("fx_particle_smoke_03.png") -688px -558px;
+    }
+
+	.ship_jet_exhaust {
+        width: 60;
+        height: 26;
+        background: url("ship_jet_exhaust.png") -688px -587px;
+    }
+
+	.ship_jet_engine {
+        width: 30;
+        height: 24;
+        background: url("ship_jet_engine.png") -734px -117px;
+    }
+
+	.fx_particle_ratata_04 {
+        width: 52;
+        height: 23;
+        background: url("fx_particle_ratata_04.png") -688px -613px;
+    }
+
+	.fx_particle_ratata_05 {
+        width: 31;
+        height: 23;
+        background: url("fx_particle_ratata_05.png") -729px -524px;
+    }
+
+	.fx_particle_engine_02 {
+        width: 25;
+        height: 23;
+        background: url("fx_particle_engine_02.png") -736px -148px;
+    }
+
+	.ship_jet_gun {
+        width: 54;
+        height: 18;
+        background: url("ship_jet_gun.png") -398px -497px;
+    }
+
+	.fx_particle_ratata_07 {
+        width: 17;
+        height: 18;
+        background: url("fx_particle_ratata_07.png") -736px -171px;
+    }
+
+	.fx_particle_ratata_06 {
+        width: 17;
+        height: 14;
+        background: url("fx_particle_ratata_06.png") -736px -189px;
+    }
+
+	.ship_enemy_gun {
+        width: 49;
+        height: 13;
+        background: url("ship_enemy_gun.png") -688px -636px;
+    }
+
+	.fx_particle_shell {
+        width: 7;
+        height: 7;
+        background: url("fx_particle_shell.png") -734px -141px;
+    }
+
+	.fx_particle_bullett {
+        width: 59;
+        height: 4;
+        background: url("fx_particle_bullett.png") -286px -346px;
+    }
+
