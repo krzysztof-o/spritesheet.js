@@ -1,5 +1,5 @@
 {{#files}}
-.{{#cssAutoName}}{{/cssAutoName}} {
+.{{{cssName}}} {
     width: {{width}}px;
     height: {{height}}px;
     background: url("{{{prefix}}}{{{spritesheetName}}}.png") -{{x}}px -{{y}}px;
