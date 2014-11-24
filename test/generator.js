@@ -14,7 +14,7 @@ describe('generator', function () {
         {path: __dirname + '/fixtures/500x500.jpg', width: 500, height: 500}
       ];
 
-      generator.getImagesSizes(FILES, {}, function (err, files) {
+      generator.getImagesSizes(FILES, {padding: 0}, function (err, files) {
         expect(err).to.be(null);
 
         expect(files[0].width).to.equal(50);
@@ -82,7 +82,7 @@ describe('generator', function () {
     ];
 
     it('should generate image file', function (done) {
-      var options = {width: 100, height: 100, path: __dirname + '/', name: 'test'};
+      var options = {width: 100, height: 100, path: __dirname + '/', name: 'test', padding: 0};
       generator.generateImage(FILES, options, function (err) {
         expect(err).to.be(null);
         expect(fs.existsSync(__dirname + '/test.png')).to.be.ok();
@@ -104,7 +104,7 @@ describe('generator', function () {
     ];
 
     it('should generate data file', function (done) {
-      var options = {path: __dirname + '/', name: 'test', format: {extension: 'json', template: 'json.template'}};
+      var options = {path: __dirname + '/', name: 'test', format: {extension: 'json', template: 'json.template', padding: 0}};
       generator.generateData(FILES, options, function (err) {
         expect(err).to.be(null);
         expect(fs.existsSync(__dirname + '/test.json')).to.be.ok();

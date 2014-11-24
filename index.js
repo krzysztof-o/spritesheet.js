@@ -63,6 +63,10 @@ if (!module.parent) {
       describe: 'packing algorithm: growing-binpacking (default), binpacking (requires passing width and height options), vertical or horizontal',
       default: 'growing-binpacking'
     })
+	  .options('padding', {
+      describe: 'padding between images in spritesheet',
+      default: 0
+    })
     .demand(1)
     .argv;
 
@@ -90,6 +94,7 @@ if (!module.parent) {
  * @param {boolean} options.square texture should be square
  * @param {boolean} options.powerOfTwo texture's size (both width and height) should be a power of two
  * @param {boolean} options.algorithm packing algorithm: growing-binpacking (default), binpacking (requires passing width and height options), vertical or horizontal
+ * @param {boolean} options.padding padding between images in spritesheet
  * @param {function} callback
  */
 function generate(files, options, callback) {
@@ -106,6 +111,7 @@ function generate(files, options, callback) {
   options.powerOfTwo = options.hasOwnProperty('powerOfTwo') ? options.powerOfTwo : false;
   options.trim = options.hasOwnProperty('trim') ? options.trim : options.format.trim;
   options.algorithm = options.hasOwnProperty('algorithm') ? options.algorithm : 'growing-binpacking';
+  options.padding = options.hasOwnProperty('padding') ? parseInt(options.padding, 10) : 0;
   options.prefix = options.hasOwnProperty('prefix') ? options.prefix : '';
 
 files = files.map(function (item) {
