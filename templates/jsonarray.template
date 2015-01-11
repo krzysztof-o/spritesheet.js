@@ -1,0 +1,29 @@
+{
+	"meta": {
+		"image": "{{{name}}}.png",
+		"size": {"w":{{width}},"h":{{height}}},
+		"scale": "1"
+	},
+	"frames": [
+	{{#files}}
+		{
+        {{#trimmed}}
+            "filename": "{{{name}}}{{extension}}",
+            "frame": {"x":{{x}},"y":{{y}},"w":{{width}},"h":{{height}}},
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {"x":{{trim.x}},"y":{{trim.y}},"w":{{width}},"h":{{height}}},
+            "sourceSize": {"w":{{trim.width}},"h":{{trim.height}}}
+        {{/trimmed}}
+        {{^trimmed}}
+            "filename": "{{{name}}}{{extension}}",
+            "frame": {"x":{{x}},"y":{{y}},"w":{{width}},"h":{{height}}},
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {"x":0,"y":0,"w":{{width}},"h":{{height}}},
+            "sourceSize": {"w":{{width}},"h":{{height}}}
+        {{/trimmed}}
+		}{{^isLast}},{{/isLast}}
+	{{/files}}
+	]
+}
