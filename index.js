@@ -10,6 +10,7 @@ module.exports = generate;
 
 var FORMATS = {
   'json': {template: 'json.template', extension: 'json', trim: false},
+  'jsonarray': {template: 'jsonarray.template', extension: 'json', trim: false},
   'pixi.js': {template: 'json.template', extension: 'json', trim: true},
   'starling': {template: 'starling.template', extension: 'xml', trim: true},
   'sparrow': {template: 'starling.template', extension: 'xml', trim: true},
