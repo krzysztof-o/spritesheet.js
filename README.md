@@ -25,12 +25,13 @@ Spritesheet.js is command-line spritesheet (a.k.a. Texture Atlas) generator writ
     -n, --name    name of generated spritesheet                                                                                                    [default: "spritesheet"]
     -p, --path    path to export directory                                                                                                         [default: "."]
     --fullpath    include path in file name                                                                                                        [default: false]
-    --prefix    prefix for image paths (css format only)                                                                                           [default: ""]
+    --prefix      prefix for image paths (css format only)                                                                                         [default: ""]
     --trim        removes transparent whitespaces around images                                                                                    [default: false]
     --square      texture should be s square                                                                                                       [default: false]
     --powerOfTwo  texture width and height should be power of two                                                                                  [default: false]
+    --validate    check algorihtm returned data                                                                                                    [default: false]
     --algorithm   packing algorithm: growing-binpacking (default), binpacking (requires passing width and height options), vertical or horizontal  [default: "growing-binpacking"]
-    --padding   padding between images in spritesheet                                                                                              [default: 0]
+    --padding     padding between images in spritesheet                                                                                            [default: 0]
     ```
 2. **Node.js**
     ```javascript
