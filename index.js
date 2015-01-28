@@ -65,6 +65,10 @@ if (!module.parent) {
       default: false,
       boolean: true
     })
+    .options('scale', {
+      describe: 'percentage scale',
+      default: '100%'
+    })
     .options('algorithm', {
       describe: 'packing algorithm: growing-binpacking (default), binpacking (requires passing width and height options), vertical or horizontal',
       default: 'growing-binpacking'

@@ -32,6 +32,7 @@ Spritesheet.js is command-line spritesheet (a.k.a. Texture Atlas) generator writ
     --validate    check algorihtm returned data                                                                                                    [default: false]
     --algorithm   packing algorithm: growing-binpacking (default), binpacking (requires passing width and height options), vertical or horizontal  [default: "growing-binpacking"]
     --padding     padding between images in spritesheet                                                                                            [default: 0]
+    --scale       percentage scale                                                                                                                 [default: "100%]
     ```
 2. **Node.js**
     ```javascript

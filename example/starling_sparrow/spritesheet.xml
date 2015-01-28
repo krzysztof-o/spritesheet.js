@@ -1,50 +1,50 @@
 <TextureAtlas imagePath="spritesheet.png">
-	<SubTexture name="fx_particle_bullett" x="286" y="346" width="59" height="4" frameX="-7" frameY="0" frameWidth="68" frameHeight="6"/>
-	<SubTexture name="fx_particle_shell" x="734" y="141" width="7" height="7" frameX="0" frameY="0" frameWidth="9" frameHeight="9"/>
-	<SubTexture name="ship_enemy_gun" x="688" y="636" width="49" height="13" frameX="0" frameY="0" frameWidth="51" frameHeight="15"/>
-	<SubTexture name="fx_particle_ratata_06" x="736" y="189" width="17" height="14" frameX="-11" frameY="-36" frameWidth="91" frameHeight="61"/>
-	<SubTexture name="fx_particle_ratata_07" x="736" y="171" width="17" height="18" frameX="-32" frameY="-30" frameWidth="91" frameHeight="61"/>
-	<SubTexture name="ship_jet_gun" x="398" y="497" width="54" height="18" frameX="0" frameY="0" frameWidth="56" frameHeight="20"/>
-	<SubTexture name="fx_particle_engine_02" x="736" y="148" width="25" height="23" frameX="-18" frameY="-6" frameWidth="51" frameHeight="59"/>
-	<SubTexture name="fx_particle_ratata_05" x="729" y="524" width="31" height="23" frameX="-6" frameY="-15" frameWidth="91" frameHeight="61"/>
-	<SubTexture name="fx_particle_ratata_04" x="688" y="613" width="52" height="23" frameX="-4" frameY="-20" frameWidth="91" frameHeight="61"/>
-	<SubTexture name="ship_jet_engine" x="734" y="117" width="30" height="24" frameX="0" frameY="0" frameWidth="32" frameHeight="26"/>
-	<SubTexture name="ship_jet_exhaust" x="688" y="587" width="60" height="26" frameX="0" frameY="0" frameWidth="62" frameHeight="28"/>
-	<SubTexture name="fx_particle_smoke_03" x="688" y="558" width="37" height="29" frameX="0" frameY="0" frameWidth="39" frameHeight="31"/>
-	<SubTexture name="fx_particle_engine_03" x="688" y="524" width="41" height="34" frameX="-7" frameY="-4" frameWidth="51" frameHeight="59"/>
-	<SubTexture name="ship_enemy_wing" x="688" y="490" width="68" height="34" frameX="0" frameY="0" frameWidth="70" frameHeight="36"/>
-	<SubTexture name="fx_particle_crash_04" x="688" y="454" width="73" height="36" frameX="-79" frameY="-132" frameWidth="289" frameHeight="176"/>
-	<SubTexture name="fx_particle_ratata_03" x="688" y="412" width="62" height="42" frameX="-1" frameY="-8" frameWidth="91" frameHeight="61"/>
-	<SubTexture name="ship_giant_engine" x="734" y="75" width="25" height="42" frameX="0" frameY="0" frameWidth="27" frameHeight="44"/>
-	<SubTexture name="ship_jet_body" x="657" y="649" width="82" height="43" frameX="0" frameY="0" frameWidth="84" frameHeight="45"/>
-	<SubTexture name="ship_jet_head" x="688" y="369" width="46" height="43" frameX="0" frameY="0" frameWidth="48" frameHeight="45"/>
-	<SubTexture name="fx_particle_pow_03" x="688" y="324" width="59" height="45" frameX="-27" frameY="-64" frameWidth="113" frameHeight="172"/>
-	<SubTexture name="ship_enemy_body" x="117" y="713" width="124" height="46" frameX="0" frameY="0" frameWidth="126" frameHeight="48"/>
-	<SubTexture name="ship_giant_floor" x="0" y="713" width="117" height="48" frameX="0" frameY="0" frameWidth="119" frameHeight="50"/>
-	<SubTexture name="fx_particle_ratata_02" x="572" y="649" width="85" height="49" frameX="0" frameY="-6" frameWidth="91" frameHeight="61"/>
-	<SubTexture name="fx_particle_engine_04" x="688" y="275" width="46" height="49" frameX="-1" frameY="0" frameWidth="51" frameHeight="59"/>
-	<SubTexture name="fx_particle_engine_01" x="688" y="220" width="49" height="55" frameX="0" frameY="-2" frameWidth="51" frameHeight="59"/>
-	<SubTexture name="fx_particle_boom_03" x="480" y="649" width="92" height="59" frameX="-41" frameY="-36" frameWidth="192" frameHeight="122"/>
-	<SubTexture name="fx_particle_ratata_01" x="391" y="649" width="89" height="59" frameX="0" frameY="0" frameWidth="91" frameHeight="61"/>
-	<SubTexture name="ship_enemy_full" x="253" y="649" width="138" height="61" frameX="0" frameY="0" frameWidth="140" frameHeight="63"/>
-	<SubTexture name="turret_enemy_base" x="138" y="649" width="115" height="62" frameX="0" frameY="0" frameWidth="117" frameHeight="64"/>
-	<SubTexture name="ship_jet_full" x="0" y="649" width="138" height="64" frameX="0" frameY="0" frameWidth="140" frameHeight="66"/>
-	<SubTexture name="turret_enemy_gun" x="688" y="148" width="48" height="72" frameX="0" frameY="0" frameWidth="50" frameHeight="74"/>
-	<SubTexture name="fx_particle_smoke_01" x="688" y="75" width="46" height="73" frameX="0" frameY="0" frameWidth="48" frameHeight="75"/>
-	<SubTexture name="fx_particle_smoke_02" x="688" y="0" width="76" height="75" frameX="0" frameY="0" frameWidth="78" frameHeight="77"/>
-	<SubTexture name="fx_particle_crash_02" x="574" y="529" width="99" height="82" frameX="-85" frameY="-85" frameWidth="289" frameHeight="176"/>
-	<SubTexture name="fx_particle_pow_02" x="637" y="355" width="49" height="84" frameX="-30" frameY="-39" frameWidth="113" frameHeight="172"/>
-	<SubTexture name="turret_enemy_full" x="459" y="529" width="115" height="94" frameX="0" frameY="0" frameWidth="117" frameHeight="96"/>
-	<SubTexture name="ship_giant_body" x="351" y="529" width="108" height="95" frameX="0" frameY="0" frameWidth="110" frameHeight="97"/>
-	<SubTexture name="fx_particle_boom_02" x="190" y="529" width="161" height="102" frameX="-8" frameY="-12" frameWidth="192" frameHeight="122"/>
-	<SubTexture name="fx_particle_bomb" x="614" y="355" width="23" height="115" frameX="0" frameY="-7" frameWidth="25" frameHeight="124"/>
-	<SubTexture name="fx_particle_boom_01" x="0" y="529" width="190" height="120" frameX="0" frameY="0" frameWidth="192" frameHeight="122"/>
-	<SubTexture name="ship_giant_head" x="532" y="355" width="82" height="129" frameX="0" frameY="0" frameWidth="84" frameHeight="131"/>
-	<SubTexture name="fx_particle_crash_01" x="489" y="218" width="187" height="134" frameX="-36" frameY="-37" frameWidth="289" frameHeight="176"/>
-	<SubTexture name="ship_giant_roof" x="398" y="355" width="134" height="142" frameX="0" frameY="0" frameWidth="136" frameHeight="144"/>
-	<SubTexture name="fx_particle_pow_01" x="287" y="355" width="111" height="170" frameX="0" frameY="0" frameWidth="113" frameHeight="172"/>
-	<SubTexture name="fx_particle_crash_03" x="0" y="355" width="287" height="174" frameX="0" frameY="0" frameWidth="289" frameHeight="176"/>
-	<SubTexture name="ship_giant_full" x="489" y="0" width="199" height="218" frameX="0" frameY="0" frameWidth="201" frameHeight="220"/>
-	<SubTexture name="character_hero" x="286" y="0" width="203" height="346" frameX="0" frameY="0" frameWidth="205" frameHeight="348"/>
-	<SubTexture name="character_evil" x="0" y="0" width="286" height="355" frameX="0" frameY="0" frameWidth="288" frameHeight="357"/>
+	<SubTexture name="fx_particle_bullett" x="286" y="346" width="59" height="4" frameX="-7" frameY="0" frameWidth="66" frameHeight="4"/>
+	<SubTexture name="fx_particle_shell" x="734" y="141" width="7" height="7" />
+	<SubTexture name="ship_enemy_gun" x="688" y="636" width="49" height="13" />
+	<SubTexture name="fx_particle_ratata_06" x="736" y="189" width="17" height="14" frameX="-11" frameY="-36" frameWidth="89" frameHeight="59"/>
+	<SubTexture name="fx_particle_ratata_07" x="736" y="171" width="17" height="18" frameX="-32" frameY="-30" frameWidth="89" frameHeight="59"/>
+	<SubTexture name="ship_jet_gun" x="398" y="497" width="54" height="18" />
+	<SubTexture name="fx_particle_engine_02" x="736" y="148" width="25" height="23" frameX="-18" frameY="-6" frameWidth="49" frameHeight="57"/>
+	<SubTexture name="fx_particle_ratata_05" x="729" y="524" width="31" height="23" frameX="-6" frameY="-15" frameWidth="89" frameHeight="59"/>
+	<SubTexture name="fx_particle_ratata_04" x="688" y="613" width="52" height="23" frameX="-4" frameY="-20" frameWidth="89" frameHeight="59"/>
+	<SubTexture name="ship_jet_engine" x="734" y="117" width="30" height="24" />
+	<SubTexture name="ship_jet_exhaust" x="688" y="587" width="60" height="26" />
+	<SubTexture name="fx_particle_smoke_03" x="688" y="558" width="37" height="29" />
+	<SubTexture name="fx_particle_engine_03" x="688" y="524" width="41" height="34" frameX="-7" frameY="-4" frameWidth="49" frameHeight="57"/>
+	<SubTexture name="ship_enemy_wing" x="688" y="490" width="68" height="34" />
+	<SubTexture name="fx_particle_crash_04" x="688" y="454" width="73" height="36" frameX="-79" frameY="-132" frameWidth="287" frameHeight="174"/>
+	<SubTexture name="fx_particle_ratata_03" x="688" y="412" width="62" height="42" frameX="-1" frameY="-8" frameWidth="89" frameHeight="59"/>
+	<SubTexture name="ship_giant_engine" x="734" y="75" width="25" height="42" />
+	<SubTexture name="ship_jet_body" x="657" y="649" width="82" height="43" />
+	<SubTexture name="ship_jet_head" x="688" y="369" width="46" height="43" />
+	<SubTexture name="fx_particle_pow_03" x="688" y="324" width="59" height="45" frameX="-27" frameY="-64" frameWidth="111" frameHeight="170"/>
+	<SubTexture name="ship_enemy_body" x="117" y="713" width="124" height="46" />
+	<SubTexture name="ship_giant_floor" x="0" y="713" width="117" height="48" />
+	<SubTexture name="fx_particle_ratata_02" x="572" y="649" width="85" height="49" frameX="0" frameY="-6" frameWidth="89" frameHeight="59"/>
+	<SubTexture name="fx_particle_engine_04" x="688" y="275" width="46" height="49" frameX="-1" frameY="0" frameWidth="49" frameHeight="57"/>
+	<SubTexture name="fx_particle_engine_01" x="688" y="220" width="49" height="55" frameX="0" frameY="-2" frameWidth="49" frameHeight="57"/>
+	<SubTexture name="fx_particle_boom_03" x="480" y="649" width="92" height="59" frameX="-41" frameY="-36" frameWidth="190" frameHeight="120"/>
+	<SubTexture name="fx_particle_ratata_01" x="391" y="649" width="89" height="59" />
+	<SubTexture name="ship_enemy_full" x="253" y="649" width="138" height="61" />
+	<SubTexture name="turret_enemy_base" x="138" y="649" width="115" height="62" />
+	<SubTexture name="ship_jet_full" x="0" y="649" width="138" height="64" />
+	<SubTexture name="turret_enemy_gun" x="688" y="148" width="48" height="72" />
+	<SubTexture name="fx_particle_smoke_01" x="688" y="75" width="46" height="73" />
+	<SubTexture name="fx_particle_smoke_02" x="688" y="0" width="76" height="75" />
+	<SubTexture name="fx_particle_crash_02" x="574" y="529" width="99" height="82" frameX="-85" frameY="-85" frameWidth="287" frameHeight="174"/>
+	<SubTexture name="fx_particle_pow_02" x="637" y="355" width="49" height="84" frameX="-30" frameY="-39" frameWidth="111" frameHeight="170"/>
+	<SubTexture name="turret_enemy_full" x="459" y="529" width="115" height="94" />
+	<SubTexture name="ship_giant_body" x="351" y="529" width="108" height="95" />
+	<SubTexture name="fx_particle_boom_02" x="190" y="529" width="161" height="102" frameX="-8" frameY="-12" frameWidth="190" frameHeight="120"/>
+	<SubTexture name="fx_particle_bomb" x="614" y="355" width="23" height="115" frameX="0" frameY="-7" frameWidth="23" frameHeight="122"/>
+	<SubTexture name="fx_particle_boom_01" x="0" y="529" width="190" height="120" />
+	<SubTexture name="ship_giant_head" x="532" y="355" width="82" height="129" />
+	<SubTexture name="fx_particle_crash_01" x="489" y="218" width="187" height="134" frameX="-36" frameY="-37" frameWidth="287" frameHeight="174"/>
+	<SubTexture name="ship_giant_roof" x="398" y="355" width="134" height="142" />
+	<SubTexture name="fx_particle_pow_01" x="287" y="355" width="111" height="170" />
+	<SubTexture name="fx_particle_crash_03" x="0" y="355" width="287" height="174" />
+	<SubTexture name="ship_giant_full" x="489" y="0" width="199" height="218" />
+	<SubTexture name="character_hero" x="286" y="0" width="203" height="346" />
+	<SubTexture name="character_evil" x="0" y="0" width="286" height="355" />
 </TextureAtlas>
