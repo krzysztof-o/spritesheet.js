@@ -128,10 +128,10 @@ files = files.map(function (item) {
     resolvedItem = path.resolve(item);
     var name = "";
     if (options.fullpath) {
-      name = options.prefix + item.substring(0, item.lastIndexOf("."));
+      name = item.substring(0, item.lastIndexOf("."));
     }
     else {
-      name = resolvedItem.substring(resolvedItem.lastIndexOf('/') + 1, resolvedItem.lastIndexOf('.'));
+      name = options.prefix + resolvedItem.substring(resolvedItem.lastIndexOf('/') + 1, resolvedItem.lastIndexOf('.'));
     }
     return {
       path: resolvedItem,
