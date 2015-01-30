@@ -42,7 +42,7 @@ if (!module.parent) {
       boolean: true
     })
     .options('prefix', {
-      describe: 'prefix for image paths (css format only)',
+      describe: 'prefix for image paths',
       default: ""
     })
     .options('trim', {
@@ -128,7 +128,7 @@ files = files.map(function (item) {
     resolvedItem = path.resolve(item);
     var name = "";
     if (options.fullpath) {
-      name = item.substring(0, item.lastIndexOf("."));
+      name = options.prefix + item.substring(0, item.lastIndexOf("."));
     }
     else {
       name = resolvedItem.substring(resolvedItem.lastIndexOf('/') + 1, resolvedItem.lastIndexOf('.'));
