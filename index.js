@@ -24,7 +24,12 @@ if (!module.parent) {
     .options('f', {
       alias: 'format',
       describe: 'format of spritesheet (starling, sparrow, json, pixi.js, easel.js, cocos2d)',
-      default: 'json'
+      default: ''
+    })
+    .options('cf', {
+      alias: 'customFormat',
+      describe: 'path to external format template',
+      default: ''
     })
     .options('n', {
       alias: 'name',
@@ -73,7 +78,7 @@ if (!module.parent) {
       describe: 'packing algorithm: growing-binpacking (default), binpacking (requires passing width and height options), vertical or horizontal',
       default: 'growing-binpacking'
     })
-	  .options('padding', {
+    .options('padding', {
       describe: 'padding between images in spritesheet',
       default: 0
     })
@@ -96,7 +101,7 @@ if (!module.parent) {
  * @param {string[]} files paths to image files
  * @param {object} options
  * @param {string} options.format format of spritesheet (starling, sparrow, json, pixi.js, easel.js, cocos2d)
- * @param {string} options.customFormat external template
+ * @param {string} options.customFormat external format template
  * @param {string} options.name name of the generated spritesheet
  * @param {string} options.path path to the generated spritesheet
  * @param {string} options.prefix prefix for image paths (css format only)
@@ -113,7 +118,12 @@ function generate(files, options, callback) {
   if (files.length == 0) return callback(new Error('no files specified'));
 
   options = options || {};
-  options.format = FORMATS[options.format] || FORMATS['json'];
+  if (Array.isArray(options.format)) {
+    options.format = options.format.map(function(x){return FORMATS[x]});
+  }
+  else if (options.format || !options.customFormat) {
+    options.format = [FORMATS[options.format] || FORMATS['json']];
+  }
   options.name = options.name || 'spritesheet';
   options.spritesheetName = options.name;
   options.path = path.resolve(options.path || '.');
