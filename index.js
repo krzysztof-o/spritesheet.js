@@ -130,8 +130,8 @@ function generate(files, options, callback) {
   options.fullpath = options.hasOwnProperty('fullpath') ? options.fullpath : false;
   options.square = options.hasOwnProperty('square') ? options.square : false;
   options.powerOfTwo = options.hasOwnProperty('powerOfTwo') ? options.powerOfTwo : false;
-  options.extension = options.hasOwnProperty('extension') ? options.extension : options.format.extension;
-  options.trim = options.hasOwnProperty('trim') ? options.trim : options.format.trim;
+  options.extension = options.hasOwnProperty('extension') ? options.extension : options.format[0].extension;
+  options.trim = options.hasOwnProperty('trim') ? options.trim : options.format[0].trim;
   options.algorithm = options.hasOwnProperty('algorithm') ? options.algorithm : 'growing-binpacking';
   options.padding = options.hasOwnProperty('padding') ? parseInt(options.padding, 10) : 0;
   options.prefix = options.hasOwnProperty('prefix') ? options.prefix : '';
