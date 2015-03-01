@@ -61,7 +61,7 @@ if (!module.parent) {
       boolean: true
     })
     .options('validate', {
-      describe: 'check algorihtm returned data',
+      describe: 'check algorithm returned data',
       default: false,
       boolean: true
     })
