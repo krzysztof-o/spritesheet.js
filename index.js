@@ -96,6 +96,7 @@ if (!module.parent) {
  * @param {string[]} files paths to image files
  * @param {object} options
  * @param {string} options.format format of spritesheet (starling, sparrow, json, pixi.js, easel.js, cocos2d)
+ * @param {string} options.customFormat external template
  * @param {string} options.name name of the generated spritesheet
  * @param {string} options.path path to the generated spritesheet
  * @param {string} options.prefix prefix for image paths (css format only)
@@ -119,6 +120,7 @@ function generate(files, options, callback) {
   options.fullpath = options.hasOwnProperty('fullpath') ? options.fullpath : false;
   options.square = options.hasOwnProperty('square') ? options.square : false;
   options.powerOfTwo = options.hasOwnProperty('powerOfTwo') ? options.powerOfTwo : false;
+  options.extension = options.hasOwnProperty('extension') ? options.extension : options.format.extension;
   options.trim = options.hasOwnProperty('trim') ? options.trim : options.format.trim;
   options.algorithm = options.hasOwnProperty('algorithm') ? options.algorithm : 'growing-binpacking';
   options.padding = options.hasOwnProperty('padding') ? parseInt(options.padding, 10) : 0;
