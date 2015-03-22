@@ -74,6 +74,10 @@ if (!module.parent) {
       describe: 'percentage scale',
       default: '100%'
     })
+    .options('fuzz', {
+      describe: 'percentage fuzz factor (usually value of 1% is a good choice)',
+      default: ''
+    })
     .options('algorithm', {
       describe: 'packing algorithm: growing-binpacking (default), binpacking (requires passing width and height options), vertical or horizontal',
       default: 'growing-binpacking'
