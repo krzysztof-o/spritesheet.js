@@ -74,6 +74,10 @@ if (!module.parent) {
       describe: 'percentage scale',
       default: '100%'
     })
+    .options('fuzz', {
+      describe: 'percentage fuzz factor (usually value of 1% is a good choice)',
+      default: ''
+    })
     .options('algorithm', {
       describe: 'packing algorithm: growing-binpacking (default), binpacking (requires passing width and height options), vertical or horizontal',
       default: 'growing-binpacking'
@@ -136,8 +140,8 @@ function generate(files, options, callback) {
   options.padding = options.hasOwnProperty('padding') ? parseInt(options.padding, 10) : 0;
   options.prefix = options.hasOwnProperty('prefix') ? options.prefix : '';
 
-files = files.map(function (item) {
-    resolvedItem = path.resolve(item);
+  files = files.map(function (item, index) {
+    var resolvedItem = path.resolve(item);
     var name = "";
     if (options.fullpath) {
       name = item.substring(0, item.lastIndexOf("."));
@@ -146,6 +150,7 @@ files = files.map(function (item) {
       name = options.prefix + resolvedItem.substring(resolvedItem.lastIndexOf('/') + 1, resolvedItem.lastIndexOf('.'));
     }
     return {
+      index: index,
       path: resolvedItem,
       name: name,
       extension: path.extname(resolvedItem)

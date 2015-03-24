@@ -2,12 +2,12 @@
 	"images": ["{{{name}}}.png"],
 	"frames": [
 		{{#files}}
-	        [{{x}}, {{y}}, {{width}}, {{height}}]{{^isLast}},{{/isLast}} //{{{name}}}
-	    {{/files}}
+			[{{x}}, {{y}}, {{width}}, {{height}}]{{^isLast}},{{/isLast}} //{{{name}}}
+		{{/files}}
 	],
 	"animations": {
 		{{#files}}
-	            "{{{name}}}":[{{index}}]{{^isLast}},{{/isLast}}
-	    {{/files}}
+				"{{{name}}}":[{{index}}]{{^isLast}},{{/isLast}}
+		{{/files}}
 	}
 }
