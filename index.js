@@ -115,6 +115,7 @@ if (!module.parent) {
  * @param {boolean} options.powerOfTwo texture's size (both width and height) should be a power of two
  * @param {boolean} options.algorithm packing algorithm: growing-binpacking (default), binpacking (requires passing width and height options), vertical or horizontal
  * @param {boolean} options.padding padding between images in spritesheet
+ * @param {function} options.frameInfoTransform a function called for each file from the sources like `frameInfoTransform(item, index, frameInfo)` and should return info like {name: 'thenameoftheframe', extension: '.png', path: '/full/path/to/image.png', index: 'numerical-index-used-for-sorting'} just like the data passed as frameInfo from the original function
  * @param {function} callback
  */
 function generate(files, options, callback) {
@@ -140,9 +141,9 @@ function generate(files, options, callback) {
   options.padding = options.hasOwnProperty('padding') ? parseInt(options.padding, 10) : 0;
   options.prefix = options.hasOwnProperty('prefix') ? options.prefix : '';
 
-  files = files.map(function (item, index) {
+  var frameInfoTransformBase = function frameInfoTransformBase(item, index) {
     var resolvedItem = path.resolve(item);
-    var name = "";
+    var name = '';
     if (options.fullpath) {
       name = item.substring(0, item.lastIndexOf("."));
     }
@@ -155,7 +156,19 @@ function generate(files, options, callback) {
       name: name,
       extension: path.extname(resolvedItem)
     };
-  });
+  };
+
+  options.frameInfoTransform = options.hasOwnProperty('frameInfoTransform') && typeof options.frameInfoTransform === 'function' ? options.frameInfoTransform : null;
+  if (options.frameInfoTransform) {
+    var frameInfoTransformCustom = options.frameInfoTransform;
+    options.frameInfoTransform = function frameInfoTransformWrapper(item, index) {
+      return frameInfoTransformCustom(item, index, frameInfoTransformBase(item, index));
+    };
+  } else {
+    options.frameInfoTransform = frameInfoTransformBase;
+  }
+
+  files = files.map(options.frameInfoTransform);
 
 
   if (!fs.existsSync(options.path) && options.path !== '') fs.mkdirSync(options.path);
