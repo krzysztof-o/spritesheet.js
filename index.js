@@ -86,6 +86,10 @@ if (!module.parent) {
       describe: 'padding between images in spritesheet',
       default: 0
     })
+    .options('sort', {
+      describe: 'Sort method: maxside (default), area, width or height',
+      default: 'maxside'
+    })
     .demand(1)
     .argv;
 
@@ -113,8 +117,9 @@ if (!module.parent) {
  * @param {boolean} options.trim removes transparent whitespaces around images
  * @param {boolean} options.square texture should be square
  * @param {boolean} options.powerOfTwo texture's size (both width and height) should be a power of two
- * @param {boolean} options.algorithm packing algorithm: growing-binpacking (default), binpacking (requires passing width and height options), vertical or horizontal
+ * @param {string} options.algorithm packing algorithm: growing-binpacking (default), binpacking (requires passing width and height options), vertical or horizontal
  * @param {boolean} options.padding padding between images in spritesheet
+ * @param {string} options.sort Sort method: maxside (default), area, width, height or none
  * @param {function} callback
  */
 function generate(files, options, callback) {
@@ -137,6 +142,7 @@ function generate(files, options, callback) {
   options.extension = options.hasOwnProperty('extension') ? options.extension : options.format[0].extension;
   options.trim = options.hasOwnProperty('trim') ? options.trim : options.format[0].trim;
   options.algorithm = options.hasOwnProperty('algorithm') ? options.algorithm : 'growing-binpacking';
+  options.sort = options.hasOwnProperty('sort') ? options.sort : 'maxside';
   options.padding = options.hasOwnProperty('padding') ? parseInt(options.padding, 10) : 0;
   options.prefix = options.hasOwnProperty('prefix') ? options.prefix : '';
 
