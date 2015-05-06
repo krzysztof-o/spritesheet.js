@@ -153,7 +153,7 @@ function generate(files, options, callback) {
       name = item.substring(0, item.lastIndexOf("."));
     }
     else {
-      name = options.prefix + resolvedItem.substring(resolvedItem.lastIndexOf('/') + 1, resolvedItem.lastIndexOf('.'));
+      name = options.prefix + resolvedItem.substring(resolvedItem.lastIndexOf(path.sep) + 1, resolvedItem.lastIndexOf('.'));
     }
     return {
       index: index,
