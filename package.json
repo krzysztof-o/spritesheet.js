@@ -1,6 +1,6 @@
 {
   "name": "spritesheet-js",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Spritesheet generator",
   "main": "index.js",
   "directories": {
@@ -66,6 +66,6 @@
   ],
   "_shasum": "ba77647a46fa7306851a173ad69f105b3dfbb695",
   "_resolved": "https://registry.npmjs.org/spritesheet-js/-/spritesheet-js-0.7.0.tgz",
-  "readme": "ERROR: No README data found!",
+  "readme": "README.md",
   "homepage": "https://github.com/krzysztof-o/spritesheet.js"
 }
