@@ -10,6 +10,7 @@ module.exports = generate;
 
 var FORMATS = {
   'json': {template: 'json.template', extension: 'json', trim: false},
+  'yaml': {template: 'yaml.template', extension: 'yaml', trim: false},
   'jsonarray': {template: 'jsonarray.template', extension: 'json', trim: false},
   'pixi.js': {template: 'json.template', extension: 'json', trim: true},
   'starling': {template: 'starling.template', extension: 'xml', trim: true},
@@ -23,7 +24,7 @@ if (!module.parent) {
   var argv = optimist.usage('Usage: $0 [options] <files>')
     .options('f', {
       alias: 'format',
-      describe: 'format of spritesheet (starling, sparrow, json, pixi.js, easel.js, cocos2d)',
+      describe: 'format of spritesheet (starling, sparrow, json, yaml, pixi.js, easel.js, cocos2d)',
       default: ''
     })
     .options('cf', {
@@ -108,7 +109,7 @@ if (!module.parent) {
  * @param {string} files pattern of files images files
  * @param {string[]} files paths to image files
  * @param {object} options
- * @param {string} options.format format of spritesheet (starling, sparrow, json, pixi.js, easel.js, cocos2d)
+ * @param {string} options.format format of spritesheet (starling, sparrow, json, yaml, pixi.js, easel.js, cocos2d)
  * @param {string} options.customFormat external format template
  * @param {string} options.name name of the generated spritesheet
  * @param {string} options.path path to the generated spritesheet
