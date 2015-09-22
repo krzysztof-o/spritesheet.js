@@ -10,6 +10,8 @@ module.exports = generate;
 
 var FORMATS = {
   'json': {template: 'json.template', extension: 'json', trim: false},
+  'node': {template: 'node.template', extension: 'js', trim: false},
+  'nodearray': {template: 'nodearray.template', extension: 'js', trim: false},
   'yaml': {template: 'yaml.template', extension: 'yaml', trim: false},
   'jsonarray': {template: 'jsonarray.template', extension: 'json', trim: false},
   'pixi.js': {template: 'json.template', extension: 'json', trim: true},
@@ -78,6 +80,10 @@ if (!module.parent) {
       describe: 'percentage scale',
       default: '100%'
     })
+    .options('extrude', {
+        describe: 'increase border by the outer pixel colors',
+        default: 0
+    })
     .options('fuzz', {
       describe: 'percentage fuzz factor (usually value of 1% is a good choice)',
       default: ''
@@ -115,7 +121,7 @@ if (!module.parent) {
       if(argv.algorithm !== 'binpacking' || !isNaN(Number(argv.width)) && !isNaN(Number(argv.height))){
         return true;
       }
-      
+
       throw new Error('Width and/or height are not defined for binpacking');
     })
     .demand(1)
