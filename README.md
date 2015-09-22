@@ -34,6 +34,7 @@ Spritesheet.js is command-line spritesheet (a.k.a. Texture Atlas) generator writ
     --padding     padding between images in spritesheet                                                                                            [default: 0]
     --scale       percentage scale                                                                                                                 [default: "100%"]
     --fuzz        percentage fuzz factor (usually value of 1% is a good choice)                                                                    [default: ""]
+    --extrude     extend the image border by the outer pixels                                                                                      [default: 0]
     ```
 2. **Node.js**
     ```javascript
