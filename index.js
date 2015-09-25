@@ -26,7 +26,7 @@ if (!module.parent) {
   var argv = optimist.usage('Usage: $0 [options] <files>')
     .options('f', {
       alias: 'format',
-      describe: 'format of spritesheet (starling, sparrow, json, yaml, pixi.js, easel.js, zebkit, cocos2d)',
+      describe: 'format of spritesheet (' + Object.keys(FORMATS).join(', ') + ')',
       default: ''
     })
     .options('cf', {
