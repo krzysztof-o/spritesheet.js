@@ -55,7 +55,7 @@ if (!module.parent) {
       boolean: true
     })
     .options('prefix', {
-      describe: 'prefix for image paths',
+      describe: 'prefix for image paths (css format only)',
       default: ""
     })
     .options('trim', {
