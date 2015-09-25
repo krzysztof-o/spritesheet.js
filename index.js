@@ -34,6 +34,11 @@ if (!module.parent) {
       describe: 'path to external format template',
       default: ''
     })
+    .options('e', {
+      alias: 'extension',
+      describe: 'The generated Atlas file extension (required if you are using a custom template)',
+      default: 'json'
+    })
     .options('n', {
       alias: 'name',
       describe: 'name of generated spritesheet',
