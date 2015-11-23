@@ -183,6 +183,7 @@ function generate(files, options, callback) {
   options.prefix = options.hasOwnProperty('prefix') ? options.prefix : '';
   options.divisibleByTwo = options.hasOwnProperty('divisibleByTwo') ? options.divisibleByTwo : false;
   options.cssOrder = options.hasOwnProperty('cssOrder') ? options.cssOrder : null;
+  options.extrude = options.hasOwnProperty('extrude') ? parseInt(options.extrude, 10) : 0;
 
   files = files.map(function (item, index) {
     var resolvedItem = path.resolve(item);
