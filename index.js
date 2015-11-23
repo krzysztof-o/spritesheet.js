@@ -152,6 +152,7 @@ function generate(files, options, callback) {
   options.sort = options.hasOwnProperty('sort') ? options.sort : 'maxside';
   options.padding = options.hasOwnProperty('padding') ? parseInt(options.padding, 10) : 0;
   options.prefix = options.hasOwnProperty('prefix') ? options.prefix : '';
+  options.extrude = options.hasOwnProperty('extrude') ? parseInt(options.extrude, 10) : 0;
 
   files = files.map(function (item, index) {
     var resolvedItem = path.resolve(item);
