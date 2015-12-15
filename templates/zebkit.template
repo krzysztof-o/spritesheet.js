@@ -1,0 +1,29 @@
+// create 'images' package
+var masv = masv || zebra.namespace("masv");
+
+masv("images");
+
+(function() {
+    var pkg = masv.images;
+
+    var sheet={
+        "image": "{{{name}}}.png",
+        "frames": [
+            {{#files}}
+                [{{x}}, {{y}}, {{width}}, {{height}}]{{^isLast}},{{/isLast}} //{{{name}}}
+            {{/files}}
+        ],
+        "sprites": {
+            {{#files}}
+                    "{{{name}}}":[{{index}}]{{^isLast}},{{/isLast}}
+            {{/files}}
+        }
+    };
+    var atlas = new Image();
+    atlas.src=sheet.image;
+
+    var process = function(coords) { return new zebra.ui.Picture(atlas, coords[0], coords[1], coords[2], coords[3])};
+    var evalStr='';
+    for (var i=0;i<sheet.frames.length;i++) evalStr+='pkg.'+Object.keys(sheet.sprites)[i]+'=process(['+sheet.frames[i]+']);';
+    eval(evalStr);
+}());
