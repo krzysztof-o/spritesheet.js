@@ -92,6 +92,11 @@ if (!module.parent) {
       describe: 'Sort method: maxside (default), area, width or height',
       default: 'maxside'
     })
+    .options('divisibleByTwo', {
+      describe: 'every generated frame coordinates should be divisible by two',
+      default: false,
+      boolean: true
+    })
     .demand(1)
     .argv;
 
@@ -122,6 +127,7 @@ if (!module.parent) {
  * @param {string} options.algorithm packing algorithm: growing-binpacking (default), binpacking (requires passing width and height options), vertical or horizontal
  * @param {boolean} options.padding padding between images in spritesheet
  * @param {string} options.sort Sort method: maxside (default), area, width, height or none
+ * @param {boolean} options.divisibleByTwo every generated frame coordinates should be divisible by two
  * @param {function} callback
  */
 function generate(files, options, callback) {
@@ -147,6 +153,7 @@ function generate(files, options, callback) {
   options.sort = options.hasOwnProperty('sort') ? options.sort : 'maxside';
   options.padding = options.hasOwnProperty('padding') ? parseInt(options.padding, 10) : 0;
   options.prefix = options.hasOwnProperty('prefix') ? options.prefix : '';
+  options.divisibleByTwo = options.hasOwnProperty('divisibleByTwo') ? options.divisibleByTwo : false;
 
   files = files.map(function (item, index) {
     var resolvedItem = path.resolve(item);
