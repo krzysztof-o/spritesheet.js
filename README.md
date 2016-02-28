@@ -7,7 +7,8 @@ Spritesheet.js is command-line spritesheet (a.k.a. Texture Atlas) generator writ
 * Starling / Sparrow
 * JSON (i.e. PIXI.js)
 * Easel.js
-* cocos2d
+* cocos2d (i.e. version 2.x)
+* cocos2d-v3 (i.e. version 3.x) 
 * CSS (new!)
 
 ###Usage###
