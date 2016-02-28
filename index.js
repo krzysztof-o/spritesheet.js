@@ -18,6 +18,7 @@ var FORMATS = {
   'easel.js': {template: 'easeljs.template', extension: 'json', trim: false},
   'zebkit': {template: 'zebkit.template', extension: 'js', trim: false},
   'cocos2d': {template: 'cocos2d.template', extension: 'plist', trim: false},
+  'cocos2d-v3': {template: 'cocos2d-v3.template', extension: 'plist', trim: false},
   'css': {template: 'css.template', extension: 'css', trim: false}
 };
 
