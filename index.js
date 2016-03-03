@@ -98,6 +98,10 @@ if (!module.parent) {
       default: false,
       boolean: true
     })
+    .options('cssOrder', {
+      describe: 'specify the exact order of generated css class names',
+      default: ''
+    })
     .demand(1)
     .argv;
 
@@ -129,6 +133,7 @@ if (!module.parent) {
  * @param {boolean} options.padding padding between images in spritesheet
  * @param {string} options.sort Sort method: maxside (default), area, width, height or none
  * @param {boolean} options.divisibleByTwo every generated frame coordinates should be divisible by two
+ * @param {string} options.cssOrder specify the exact order of generated css class names
  * @param {function} callback
  */
 function generate(files, options, callback) {
@@ -155,6 +160,7 @@ function generate(files, options, callback) {
   options.padding = options.hasOwnProperty('padding') ? parseInt(options.padding, 10) : 0;
   options.prefix = options.hasOwnProperty('prefix') ? options.prefix : '';
   options.divisibleByTwo = options.hasOwnProperty('divisibleByTwo') ? options.divisibleByTwo : false;
+  options.cssOrder = options.hasOwnProperty('cssOrder') ? options.cssOrder : null;
 
   files = files.map(function (item, index) {
     var resolvedItem = path.resolve(item);
