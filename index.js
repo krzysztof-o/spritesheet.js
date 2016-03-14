@@ -26,13 +26,18 @@ if (!module.parent) {
   var argv = optimist.usage('Usage: $0 [options] <files>')
     .options('f', {
       alias: 'format',
-      describe: 'format of spritesheet (starling, sparrow, json, yaml, pixi.js, easel.js, zebkit, cocos2d)',
+      describe: 'format of spritesheet (' + Object.keys(FORMATS).join(', ') + ')',
       default: ''
     })
     .options('cf', {
       alias: 'customFormat',
       describe: 'path to external format template',
       default: ''
+    })
+    .options('e', {
+      alias: 'extension',
+      describe: 'The generated Atlas file extension (required if you are using a custom template)',
+      default: 'json'
     })
     .options('n', {
       alias: 'name',
@@ -50,7 +55,7 @@ if (!module.parent) {
       boolean: true
     })
     .options('prefix', {
-      describe: 'prefix for image paths',
+      describe: 'prefix for image paths (css format only)',
       default: ""
     })
     .options('trim', {
