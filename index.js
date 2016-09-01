@@ -16,6 +16,7 @@ var FORMATS = {
   'starling': {template: 'starling.template', extension: 'xml', trim: true},
   'sparrow': {template: 'starling.template', extension: 'xml', trim: true},
   'easel.js': {template: 'easeljs.template', extension: 'json', trim: false},
+  'egret': {template: 'egret.template', extension: 'json', trim: false},
   'zebkit': {template: 'zebkit.template', extension: 'js', trim: false},
   'cocos2d': {template: 'cocos2d.template', extension: 'plist', trim: false},
   'cocos2d-v3': {template: 'cocos2d-v3.template', extension: 'plist', trim: false},
@@ -26,7 +27,7 @@ if (!module.parent) {
   var argv = optimist.usage('Usage: $0 [options] <files>')
     .options('f', {
       alias: 'format',
-      describe: 'format of spritesheet (starling, sparrow, json, yaml, pixi.js, easel.js, zebkit, cocos2d)',
+      describe: 'format of spritesheet (starling, sparrow, json, yaml, pixi.js, easel.js, egret, zebkit, cocos2d)',
       default: ''
     })
     .options('cf', {

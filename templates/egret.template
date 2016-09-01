@@ -1,0 +1,17 @@
+{
+	"file": "{{{name}}}.png",
+	"frames": {
+	{{#files}}
+		"{{{name}}}{{extension}}": {
+			"x":{{x}},
+			"y":{{y}},
+			"w":{{width}},
+			"h":{{height}},
+			"offX": 0,
+			"offY": 0,
+			"sourceW": {{width}},
+			"sourceH": {{height}}
+		}{{^isLast}},{{/isLast}}
+	{{/files}}
+	}
+}
