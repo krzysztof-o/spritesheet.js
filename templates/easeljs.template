@@ -2,7 +2,7 @@
 	"images": ["{{{name}}}.png"],
 	"frames": [
 		{{#files}}
-			[{{x}}, {{y}}, {{width}}, {{height}}]{{^isLast}},{{/isLast}} //{{{name}}}
+			[{{x}}, {{y}}, {{width}}, {{height}}]{{^isLast}},{{/isLast}}
 		{{/files}}
 	],
 	"animations": {
