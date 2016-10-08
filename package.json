@@ -13,11 +13,11 @@
   "dependencies": {
     "async": "~0.2.9",
     "binpacking": "~0.0.1",
-    "mustache": "~0.7.2",
-    "underscore": "~1.5.2",
     "glob": "~3.2.6",
+    "mustache": "~0.7.2",
     "optimist": "~0.6.0",
-    "platform-cmd": "0.0.2"
+    "shelljs": "^0.7.4",
+    "underscore": "~1.5.2"
   },
   "devDependencies": {
     "mocha": "*",
