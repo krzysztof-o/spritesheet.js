@@ -83,8 +83,16 @@ if (!module.parent) {
       default: ''
     })
     .options('algorithm', {
-      describe: 'packing algorithm: growing-binpacking (default), binpacking (requires passing width and height options), vertical or horizontal',
+      describe: 'packing algorithm: growing-binpacking (default), binpacking (requires passing --width and --height options), vertical or horizontal',
       default: 'growing-binpacking'
+    })
+    .options('width', {
+      describe: 'width for binpacking',
+      default: undefined
+    })
+    .options('height', {
+      describe: 'height for binpacking',
+      default: undefined
     })
     .options('padding', {
       describe: 'padding between images in spritesheet',
@@ -102,6 +110,13 @@ if (!module.parent) {
     .options('cssOrder', {
       describe: 'specify the exact order of generated css class names',
       default: ''
+    })
+    .check(function(argv){
+      if(argv.algorithm !== 'binpacking' || !isNaN(Number(argv.width)) && !isNaN(Number(argv.height))){
+        return true;
+      }
+      
+      thrown new Error('Width and/or height are not defined for binpacking');
     })
     .demand(1)
     .argv;
