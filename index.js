@@ -116,7 +116,7 @@ if (!module.parent) {
         return true;
       }
       
-      thrown new Error('Width and/or height are not defined for binpacking');
+      throw new Error('Width and/or height are not defined for binpacking');
     })
     .demand(1)
     .argv;
