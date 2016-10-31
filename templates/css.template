@@ -2,7 +2,7 @@
 .{{{cssName}}} {
     width: {{width}}px;
     height: {{height}}px;
-    background: url("{{{prefix}}}{{{spritesheetName}}}.png") -{{x}}px -{{y}}px;
+    background: url("{{{spritesheetName}}}.png") -{{x}}px -{{y}}px;
 }
 
 {{/files}}

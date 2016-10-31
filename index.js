@@ -140,7 +140,7 @@ if (!module.parent) {
  * @param {string} options.customFormat external format template
  * @param {string} options.name name of the generated spritesheet
  * @param {string} options.path path to the generated spritesheet
- * @param {string} options.prefix prefix for image paths (css format only)
+ * @param {string} options.prefix prefix for image paths
  * @param {boolean} options.fullpath include path in file name
  * @param {boolean} options.trim removes transparent whitespaces around images
  * @param {boolean} options.square texture should be square
