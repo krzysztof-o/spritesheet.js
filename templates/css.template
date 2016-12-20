@@ -3,6 +3,7 @@
     width: {{width}}px;
     height: {{height}}px;
     background: url("{{{spritesheetName}}}.png") -{{x}}px -{{y}}px;
+	background-size: {{spritesheetWidth}}px {{spritesheetHeight}}px;
 }
 
 {{/files}}
