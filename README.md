@@ -56,7 +56,7 @@ Spritesheet.js can remove transparent whitespace around images. Thanks to that y
 ![Trimming / Cropping](http://i.imgur.com/76OokJU.png)
 
 ###Installation###
-1. Install [ImageMagick](http://www.imagemagick.org/)
+1. Install [ImageMagick 6.x](http://www.imagemagick.org/)
 2. ```npm install spritesheet-js -g```
 
 ###Test###
