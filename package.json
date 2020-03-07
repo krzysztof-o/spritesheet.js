@@ -1,6 +1,6 @@
 {
   "name": "spritesheet-js",
-  "version": "1.2.6",
+  "version": "1.2.7",
   "description": "Spritesheet generator",
   "main": "index.js",
   "directories": {
@@ -17,7 +17,7 @@
     "mustache": "~0.7.2",
     "optimist": "~0.6.0",
     "platform-command": "git+https://gitlab.com/gitlabdev/platform-command.git",
-    "underscore": "~1.5.2"
+    "underscore": "1.9.2"
   },
   "devDependencies": {
     "mocha": "*",
