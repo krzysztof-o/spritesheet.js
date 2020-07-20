@@ -8,7 +8,7 @@ Spritesheet.js is command-line spritesheet (a.k.a. Texture Atlas) generator writ
 * JSON (i.e. PIXI.js)
 * Easel.js
 * cocos2d (i.e. version 2.x)
-* cocos2d-v3 (i.e. version 3.x) 
+* cocos2d-v3 (i.e. version 3.x)
 * CSS (new!)
 
 ### Usage ###
@@ -37,6 +37,7 @@ Options:
 --padding     padding between images in spritesheet                                                                                                [default: 0]
 --scale       percentage scale                                                                                                                     [default: "100%"]
 --fuzz        percentage fuzz factor (usually value of 1% is a good choice)                                                                        [default: ""]
+--extrude     extend the image border by the outer pixels                                                                                      [default: 0]
 ```
 **Node.js**
 ```javascript
@@ -48,8 +49,8 @@ if (err) throw err;
 console.log('spritesheet successfully generated');
 });
 ```
-  
-  
+
+
 ### Trimming / Cropping ###
 Spritesheet.js can remove transparent whitespace around images. Thanks to that you can pack more assets into one spritesheet and it makes rendering a little bit faster.
 

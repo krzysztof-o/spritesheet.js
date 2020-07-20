@@ -1,25 +1,151 @@
-.button {
-    width: 124px;
-    height: 50px;
-    background: url("spritesheet.png") -124px -713px;
+.character_evil {
+    width: 286px;
+    height: 355px;
+    background: url("spritesheet.png") -0px -0px;
+}
+
+.fx_particle_shell {
+    width: 7px;
+    height: 7px;
+    background: url("spritesheet.png") -884px -215px;
+}
+
+.fx_particle_crash_03 {
+    width: 287px;
+    height: 174px;
+    background: url("spritesheet.png") -489px -0px;
+}
+
+.ship_giant_full {
+    width: 199px;
+    height: 218px;
+    background: url("spritesheet.png") -0px -355px;
+}
+
+.fx_particle_boom_01 {
+    width: 190px;
+    height: 120px;
+    background: url("spritesheet.png") -489px -174px;
+}
+
+.fx_particle_crash_01 {
+    width: 187px;
+    height: 134px;
+    background: url("spritesheet.png") -199px -355px;
+}
+
+.fx_particle_pow_01 {
+    width: 111px;
+    height: 170px;
+    background: url("spritesheet.png") -0px -573px;
+}
+
+.fx_particle_boom_02 {
+    width: 161px;
+    height: 102px;
+    background: url("spritesheet.png") -386px -355px;
+}
+
+.ship_giant_roof {
+    width: 134px;
+    height: 142px;
+    background: url("spritesheet.png") -111px -573px;
+}
+
+.ship_jet_full {
+    width: 138px;
+    height: 64px;
+    background: url("spritesheet.png") -547px -355px;
+}
+
+.ship_enemy_full {
+    width: 138px;
+    height: 61px;
+    background: url("spritesheet.png") -489px -294px;
+}
+
+.ship_giant_head {
+    width: 82px;
+    height: 129px;
+    background: url("spritesheet.png") -245px -573px;
 }
 
 .button:active {
     width: 124px;
     height: 50px;
-    background: url("spritesheet.png") -0px -713px;
+    background: url("spritesheet.png") -627px -294px;
 }
 
 .button:hover {
     width: 124px;
     height: 50px;
-    background: url("spritesheet.png") -572px -649px;
+    background: url("spritesheet.png") -199px -489px;
 }
 
-.character_evil {
-    width: 286px;
-    height: 355px;
-    background: url("spritesheet.png") -0px -0px;
+.button {
+    width: 124px;
+    height: 50px;
+    background: url("spritesheet.png") -323px -489px;
+}
+
+.ship_enemy_body {
+    width: 124px;
+    height: 46px;
+    background: url("spritesheet.png") -447px -489px;
+}
+
+.ship_giant_floor {
+    width: 117px;
+    height: 48px;
+    background: url("spritesheet.png") -327px -573px;
+}
+
+.turret_enemy_full {
+    width: 115px;
+    height: 94px;
+    background: url("spritesheet.png") -776px -0px;
+}
+
+.turret_enemy_base {
+    width: 115px;
+    height: 62px;
+    background: url("spritesheet.png") -776px -94px;
+}
+
+.fx_particle_bomb {
+    width: 23px;
+    height: 115px;
+    background: url("spritesheet.png") -776px -156px;
+}
+
+.ship_giant_body {
+    width: 108px;
+    height: 95px;
+    background: url("spritesheet.png") -776px -271px;
+}
+
+.fx_particle_crash_02 {
+    width: 99px;
+    height: 82px;
+    background: url("spritesheet.png") -776px -366px;
+}
+
+.fx_particle_boom_03 {
+    width: 92px;
+    height: 59px;
+    background: url("spritesheet.png") -799px -156px;
+}
+
+.fx_particle_ratata_01 {
+    width: 89px;
+    height: 59px;
+    background: url("spritesheet.png") -776px -448px;
+}
+
+.fx_particle_ratata_02 {
+    width: 85px;
+    height: 49px;
+    background: url("spritesheet.png") -799px -215px;
 }
 
 .character_hero {
@@ -28,279 +154,153 @@
     background: url("spritesheet.png") -286px -0px;
 }
 
-.fx_particle_bomb {
-    width: 23px;
-    height: 115px;
-    background: url("spritesheet.png") -614px -355px;
-}
-
-.fx_particle_boom_01 {
-    width: 190px;
-    height: 120px;
-    background: url("spritesheet.png") -0px -529px;
-}
-
-.fx_particle_boom_02 {
-    width: 161px;
-    height: 102px;
-    background: url("spritesheet.png") -190px -529px;
-}
-
-.fx_particle_boom_03 {
-    width: 92px;
-    height: 59px;
-    background: url("spritesheet.png") -480px -649px;
-}
-
-.fx_particle_bullett {
-    width: 59px;
-    height: 4px;
-    background: url("spritesheet.png") -286px -346px;
-}
-
-.fx_particle_crash_01 {
-    width: 187px;
-    height: 134px;
-    background: url("spritesheet.png") -489px -218px;
-}
-
-.fx_particle_crash_02 {
-    width: 99px;
-    height: 82px;
-    background: url("spritesheet.png") -574px -529px;
-}
-
-.fx_particle_crash_03 {
-    width: 287px;
-    height: 174px;
-    background: url("spritesheet.png") -0px -355px;
-}
-
-.fx_particle_crash_04 {
-    width: 73px;
-    height: 36px;
-    background: url("spritesheet.png") -688px -454px;
-}
-
-.fx_particle_engine_01 {
-    width: 49px;
-    height: 55px;
-    background: url("spritesheet.png") -688px -220px;
-}
-
-.fx_particle_engine_02 {
-    width: 25px;
-    height: 23px;
-    background: url("spritesheet.png") -736px -148px;
-}
-
-.fx_particle_engine_03 {
-    width: 41px;
-    height: 34px;
-    background: url("spritesheet.png") -688px -524px;
-}
-
-.fx_particle_engine_04 {
-    width: 46px;
-    height: 49px;
-    background: url("spritesheet.png") -688px -275px;
-}
-
-.fx_particle_pow_01 {
-    width: 111px;
-    height: 170px;
-    background: url("spritesheet.png") -287px -355px;
-}
-
-.fx_particle_pow_02 {
-    width: 49px;
-    height: 84px;
-    background: url("spritesheet.png") -637px -355px;
-}
-
-.fx_particle_pow_03 {
-    width: 59px;
-    height: 45px;
-    background: url("spritesheet.png") -688px -324px;
-}
-
-.fx_particle_ratata_01 {
-    width: 89px;
-    height: 59px;
-    background: url("spritesheet.png") -391px -649px;
-}
-
-.fx_particle_ratata_02 {
-    width: 85px;
-    height: 49px;
-    background: url("spritesheet.png") -248px -713px;
-}
-
-.fx_particle_ratata_03 {
-    width: 62px;
-    height: 42px;
-    background: url("spritesheet.png") -688px -412px;
-}
-
-.fx_particle_ratata_04 {
-    width: 52px;
-    height: 23px;
-    background: url("spritesheet.png") -688px -613px;
-}
-
-.fx_particle_ratata_05 {
-    width: 31px;
-    height: 23px;
-    background: url("spritesheet.png") -729px -524px;
-}
-
-.fx_particle_ratata_06 {
-    width: 17px;
-    height: 14px;
-    background: url("spritesheet.png") -736px -189px;
-}
-
-.fx_particle_ratata_07 {
-    width: 17px;
-    height: 18px;
-    background: url("spritesheet.png") -736px -171px;
-}
-
-.fx_particle_shell {
-    width: 7px;
-    height: 7px;
-    background: url("spritesheet.png") -734px -141px;
-}
-
-.fx_particle_smoke_01 {
-    width: 46px;
-    height: 73px;
-    background: url("spritesheet.png") -688px -75px;
+.ship_jet_body {
+    width: 82px;
+    height: 43px;
+    background: url("spritesheet.png") -776px -591px;
 }
 
 .fx_particle_smoke_02 {
     width: 76px;
     height: 75px;
-    background: url("spritesheet.png") -688px -0px;
+    background: url("spritesheet.png") -776px -634px;
 }
 
-.fx_particle_smoke_03 {
-    width: 37px;
-    height: 29px;
-    background: url("spritesheet.png") -688px -558px;
-}
-
-.ship_enemy_body {
-    width: 124px;
-    height: 46px;
-    background: url("spritesheet.png") -450px -713px;
-}
-
-.ship_enemy_full {
-    width: 138px;
-    height: 61px;
-    background: url("spritesheet.png") -253px -649px;
-}
-
-.ship_enemy_gun {
-    width: 49px;
-    height: 13px;
-    background: url("spritesheet.png") -688px -636px;
-}
-
-.ship_enemy_wing {
-    width: 68px;
-    height: 34px;
-    background: url("spritesheet.png") -688px -490px;
-}
-
-.ship_giant_body {
-    width: 108px;
-    height: 95px;
-    background: url("spritesheet.png") -351px -529px;
-}
-
-.ship_giant_engine {
-    width: 25px;
-    height: 42px;
-    background: url("spritesheet.png") -734px -75px;
-}
-
-.ship_giant_floor {
-    width: 117px;
-    height: 48px;
-    background: url("spritesheet.png") -333px -713px;
-}
-
-.ship_giant_full {
-    width: 199px;
-    height: 218px;
-    background: url("spritesheet.png") -489px -0px;
-}
-
-.ship_giant_head {
-    width: 82px;
-    height: 129px;
-    background: url("spritesheet.png") -532px -355px;
-}
-
-.ship_giant_roof {
-    width: 134px;
-    height: 142px;
-    background: url("spritesheet.png") -398px -355px;
-}
-
-.ship_jet_body {
-    width: 82px;
-    height: 43px;
-    background: url("spritesheet.png") -574px -713px;
-}
-
-.ship_jet_engine {
-    width: 30px;
-    height: 24px;
-    background: url("spritesheet.png") -734px -117px;
-}
-
-.ship_jet_exhaust {
-    width: 60px;
-    height: 26px;
-    background: url("spritesheet.png") -688px -587px;
-}
-
-.ship_jet_full {
-    width: 138px;
-    height: 64px;
-    background: url("spritesheet.png") -0px -649px;
-}
-
-.ship_jet_gun {
-    width: 54px;
-    height: 18px;
-    background: url("spritesheet.png") -398px -497px;
-}
-
-.ship_jet_head {
+.fx_particle_smoke_01 {
     width: 46px;
-    height: 43px;
-    background: url("spritesheet.png") -688px -369px;
+    height: 73px;
+    background: url("spritesheet.png") -825px -507px;
 }
 
-.turret_enemy_base {
-    width: 115px;
-    height: 62px;
-    background: url("spritesheet.png") -138px -649px;
-}
-
-.turret_enemy_full {
-    width: 115px;
-    height: 94px;
-    background: url("spritesheet.png") -459px -529px;
+.fx_particle_crash_04 {
+    width: 73px;
+    height: 36px;
+    background: url("spritesheet.png") -679px -174px;
 }
 
 .turret_enemy_gun {
     width: 48px;
     height: 72px;
-    background: url("spritesheet.png") -688px -148px;
+    background: url("spritesheet.png") -679px -210px;
+}
+
+.ship_enemy_wing {
+    width: 68px;
+    height: 34px;
+    background: url("spritesheet.png") -776px -709px;
+}
+
+.fx_particle_ratata_03 {
+    width: 62px;
+    height: 42px;
+    background: url("spritesheet.png") -685px -355px;
+}
+
+.ship_jet_exhaust {
+    width: 60px;
+    height: 26px;
+    background: url("spritesheet.png") -547px -419px;
+}
+
+.fx_particle_pow_03 {
+    width: 59px;
+    height: 45px;
+    background: url("spritesheet.png") -571px -489px;
+}
+
+.fx_particle_bullett {
+    width: 59px;
+    height: 4px;
+    background: url("spritesheet.png") -799px -264px;
+}
+
+.fx_particle_engine_01 {
+    width: 49px;
+    height: 55px;
+    background: url("spritesheet.png") -727px -210px;
+}
+
+.ship_jet_gun {
+    width: 54px;
+    height: 18px;
+    background: url("spritesheet.png") -685px -397px;
+}
+
+.fx_particle_ratata_04 {
+    width: 52px;
+    height: 23px;
+    background: url("spritesheet.png") -607px -419px;
+}
+
+.fx_particle_engine_04 {
+    width: 46px;
+    height: 49px;
+    background: url("spritesheet.png") -327px -621px;
+}
+
+.ship_enemy_gun {
+    width: 49px;
+    height: 13px;
+    background: url("spritesheet.png") -727px -265px;
+}
+
+.ship_jet_head {
+    width: 46px;
+    height: 43px;
+    background: url("spritesheet.png") -630px -489px;
+}
+
+.ship_giant_engine {
+    width: 25px;
+    height: 42px;
+    background: url("spritesheet.png") -865px -448px;
+}
+
+.fx_particle_engine_03 {
+    width: 41px;
+    height: 34px;
+    background: url("spritesheet.png") -844px -709px;
+}
+
+.fx_particle_smoke_03 {
+    width: 37px;
+    height: 29px;
+    background: url("spritesheet.png") -852px -634px;
+}
+
+.fx_particle_ratata_05 {
+    width: 31px;
+    height: 23px;
+    background: url("spritesheet.png") -858px -591px;
+}
+
+.ship_jet_engine {
+    width: 30px;
+    height: 24px;
+    background: url("spritesheet.png") -852px -663px;
+}
+
+.fx_particle_engine_02 {
+    width: 25px;
+    height: 23px;
+    background: url("spritesheet.png") -751px -294px;
+}
+
+.fx_particle_ratata_07 {
+    width: 17px;
+    height: 18px;
+    background: url("spritesheet.png") -871px -507px;
+}
+
+.fx_particle_ratata_06 {
+    width: 17px;
+    height: 14px;
+    background: url("spritesheet.png") -865px -490px;
+}
+
+.fx_particle_pow_02 {
+    width: 49px;
+    height: 84px;
+    background: url("spritesheet.png") -776px -507px;
 }
 

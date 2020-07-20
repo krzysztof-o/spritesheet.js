@@ -1,34 +1,10 @@
 {
 	"meta": {
 		"image": "spritesheet.png",
-		"size": {"w":589,"h":490},
+		"size": {"w":584,"h":540},
 		"scale": "1"
 	},
 	"frames": {
-		"button.png":
-		{
-			"frame": {"x":10,"y":455,"w":62,"h":25},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":25},
-			"sourceSize": {"w":62,"h":25}
-		},
-		"button_active.png":
-		{
-			"frame": {"x":174,"y":455,"w":62,"h":25},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":25},
-			"sourceSize": {"w":62,"h":25}
-		},
-		"button_hover.png":
-		{
-			"frame": {"x":92,"y":455,"w":62,"h":25},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":25},
-			"sourceSize": {"w":62,"h":25}
-		},
 		"character_evil.png":
 		{
 			"frame": {"x":10,"y":10,"w":143,"h":178},
@@ -36,6 +12,198 @@
 			"trimmed": false,
 			"spriteSourceSize": {"x":0,"y":0,"w":143,"h":178},
 			"sourceSize": {"w":143,"h":178}
+		},
+		"fx_particle_shell.png":
+		{
+			"frame": {"x":566,"y":288,"w":4,"h":4},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":4,"h":4},
+			"sourceSize": {"w":4,"h":4}
+		},
+		"fx_particle_crash_03.png":
+		{
+			"frame": {"x":295,"y":10,"w":144,"h":87},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":144,"h":87},
+			"sourceSize": {"w":144,"h":87}
+		},
+		"ship_giant_full.png":
+		{
+			"frame": {"x":10,"y":208,"w":100,"h":109},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":100,"h":109},
+			"sourceSize": {"w":100,"h":109}
+		},
+		"fx_particle_crash_01.png":
+		{
+			"frame": {"x":295,"y":117,"w":96,"h":68},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":17,"y":18,"w":96,"h":68},
+			"sourceSize": {"w":144,"h":87}
+		},
+		"fx_particle_boom_01.png":
+		{
+			"frame": {"x":130,"y":208,"w":95,"h":60},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":95,"h":60},
+			"sourceSize": {"w":95,"h":60}
+		},
+		"fx_particle_pow_01.png":
+		{
+			"frame": {"x":10,"y":337,"w":56,"h":85},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":85},
+			"sourceSize": {"w":56,"h":85}
+		},
+		"fx_particle_boom_02.png":
+		{
+			"frame": {"x":245,"y":208,"w":82,"h":53},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":3,"y":5,"w":82,"h":53},
+			"sourceSize": {"w":95,"h":60}
+		},
+		"ship_giant_roof.png":
+		{
+			"frame": {"x":86,"y":337,"w":67,"h":71},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":67,"h":71},
+			"sourceSize": {"w":67,"h":71}
+		},
+		"ship_jet_full.png":
+		{
+			"frame": {"x":347,"y":208,"w":69,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":69,"h":32},
+			"sourceSize": {"w":69,"h":32}
+		},
+		"ship_enemy_full.png":
+		{
+			"frame": {"x":173,"y":337,"w":69,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":69,"h":31},
+			"sourceSize": {"w":69,"h":31}
+		},
+		"ship_giant_head.png":
+		{
+			"frame": {"x":459,"y":10,"w":41,"h":65},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":65},
+			"sourceSize": {"w":41,"h":65}
+		},
+		"button_active.png":
+		{
+			"frame": {"x":130,"y":288,"w":62,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":25},
+			"sourceSize": {"w":62,"h":25}
+		},
+		"button_hover.png":
+		{
+			"frame": {"x":212,"y":288,"w":62,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":25},
+			"sourceSize": {"w":62,"h":25}
+		},
+		"button.png":
+		{
+			"frame": {"x":294,"y":288,"w":62,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":25},
+			"sourceSize": {"w":62,"h":25}
+		},
+		"ship_enemy_body.png":
+		{
+			"frame": {"x":376,"y":288,"w":62,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":23},
+			"sourceSize": {"w":62,"h":23}
+		},
+		"ship_giant_floor.png":
+		{
+			"frame": {"x":262,"y":337,"w":59,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":59,"h":24},
+			"sourceSize": {"w":59,"h":24}
+		},
+		"turret_enemy_full.png":
+		{
+			"frame": {"x":10,"y":442,"w":58,"h":47},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":58,"h":47},
+			"sourceSize": {"w":58,"h":47}
+		},
+		"turret_enemy_base.png":
+		{
+			"frame": {"x":88,"y":442,"w":58,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":58,"h":31},
+			"sourceSize": {"w":58,"h":31}
+		},
+		"fx_particle_bomb.png":
+		{
+			"frame": {"x":459,"y":95,"w":12,"h":58},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":0,"y":3,"w":12,"h":58},
+			"sourceSize": {"w":12,"h":61}
+		},
+		"ship_giant_body.png":
+		{
+			"frame": {"x":520,"y":10,"w":54,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":54,"h":48},
+			"sourceSize": {"w":54,"h":48}
+		},
+		"fx_particle_crash_02.png":
+		{
+			"frame": {"x":520,"y":78,"w":51,"h":42},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":42,"y":42,"w":51,"h":42},
+			"sourceSize": {"w":144,"h":87}
+		},
+		"fx_particle_boom_03.png":
+		{
+			"frame": {"x":520,"y":140,"w":47,"h":31},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":20,"y":17,"w":47,"h":31},
+			"sourceSize": {"w":95,"h":60}
+		},
+		"fx_particle_ratata_01.png":
+		{
+			"frame": {"x":520,"y":191,"w":45,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":45,"h":30},
+			"sourceSize": {"w":45,"h":30}
+		},
+		"fx_particle_ratata_02.png":
+		{
+			"frame": {"x":520,"y":241,"w":44,"h":27},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":0,"y":2,"w":44,"h":27},
+			"sourceSize": {"w":45,"h":30}
 		},
 		"character_hero.png":
 		{
@@ -45,373 +213,205 @@
 			"spriteSourceSize": {"x":0,"y":0,"w":102,"h":173},
 			"sourceSize": {"w":102,"h":173}
 		},
-		"fx_particle_bomb.png":
-		{
-			"frame": {"x":241,"y":315,"w":12,"h":58},
-			"rotated": false,
-			"trimmed": true,
-			"spriteSourceSize": {"x":0,"y":3,"w":12,"h":58},
-			"sourceSize": {"w":12,"h":61}
-		},
-		"fx_particle_boom_01.png":
-		{
-			"frame": {"x":126,"y":315,"w":95,"h":60},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {"x":0,"y":0,"w":95,"h":60},
-			"sourceSize": {"w":95,"h":60}
-		},
-		"fx_particle_boom_02.png":
-		{
-			"frame": {"x":273,"y":315,"w":82,"h":53},
-			"rotated": false,
-			"trimmed": true,
-			"spriteSourceSize": {"x":3,"y":5,"w":82,"h":53},
-			"sourceSize": {"w":95,"h":60}
-		},
-		"fx_particle_boom_03.png":
-		{
-			"frame": {"x":266,"y":403,"w":47,"h":31},
-			"rotated": false,
-			"trimmed": true,
-			"spriteSourceSize": {"x":20,"y":17,"w":47,"h":31},
-			"sourceSize": {"w":95,"h":60}
-		},
-		"fx_particle_bullett.png":
-		{
-			"frame": {"x":415,"y":373,"w":30,"h":2},
-			"rotated": false,
-			"trimmed": true,
-			"spriteSourceSize": {"x":3,"y":0,"w":30,"h":2},
-			"sourceSize": {"w":33,"h":2}
-		},
-		"fx_particle_crash_01.png":
-		{
-			"frame": {"x":10,"y":315,"w":96,"h":68},
-			"rotated": false,
-			"trimmed": true,
-			"spriteSourceSize": {"x":17,"y":18,"w":96,"h":68},
-			"sourceSize": {"w":144,"h":87}
-		},
-		"fx_particle_crash_02.png":
-		{
-			"frame": {"x":415,"y":140,"w":51,"h":42},
-			"rotated": false,
-			"trimmed": true,
-			"spriteSourceSize": {"x":42,"y":42,"w":51,"h":42},
-			"sourceSize": {"w":144,"h":87}
-		},
-		"fx_particle_crash_03.png":
-		{
-			"frame": {"x":10,"y":208,"w":144,"h":87},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {"x":0,"y":0,"w":144,"h":87},
-			"sourceSize": {"w":144,"h":87}
-		},
-		"fx_particle_crash_04.png":
-		{
-			"frame": {"x":538,"y":93,"w":38,"h":20},
-			"rotated": false,
-			"trimmed": true,
-			"spriteSourceSize": {"x":39,"y":65,"w":38,"h":20},
-			"sourceSize": {"w":144,"h":87}
-		},
-		"fx_particle_engine_01.png":
-		{
-			"frame": {"x":369,"y":139,"w":25,"h":29},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":29},
-			"sourceSize": {"w":25,"h":29}
-		},
-		"fx_particle_engine_02.png":
-		{
-			"frame": {"x":538,"y":244,"w":15,"h":14},
-			"rotated": false,
-			"trimmed": true,
-			"spriteSourceSize": {"x":8,"y":2,"w":15,"h":14},
-			"sourceSize": {"w":25,"h":29}
-		},
-		"fx_particle_engine_03.png":
-		{
-			"frame": {"x":538,"y":133,"w":22,"h":19},
-			"rotated": false,
-			"trimmed": true,
-			"spriteSourceSize": {"x":3,"y":1,"w":22,"h":19},
-			"sourceSize": {"w":25,"h":29}
-		},
-		"fx_particle_engine_04.png":
-		{
-			"frame": {"x":493,"y":10,"w":25,"h":26},
-			"rotated": false,
-			"trimmed": true,
-			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":26},
-			"sourceSize": {"w":25,"h":29}
-		},
-		"fx_particle_pow_01.png":
-		{
-			"frame": {"x":174,"y":208,"w":56,"h":85},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":85},
-			"sourceSize": {"w":56,"h":85}
-		},
-		"fx_particle_pow_02.png":
-		{
-			"frame": {"x":415,"y":77,"w":26,"h":43},
-			"rotated": false,
-			"trimmed": true,
-			"spriteSourceSize": {"x":14,"y":19,"w":26,"h":43},
-			"sourceSize": {"w":56,"h":85}
-		},
-		"fx_particle_pow_03.png":
-		{
-			"frame": {"x":256,"y":455,"w":31,"h":24},
-			"rotated": false,
-			"trimmed": true,
-			"spriteSourceSize": {"x":13,"y":31,"w":31,"h":24},
-			"sourceSize": {"w":56,"h":85}
-		},
-		"fx_particle_ratata_01.png":
-		{
-			"frame": {"x":333,"y":403,"w":45,"h":30},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {"x":0,"y":0,"w":45,"h":30},
-			"sourceSize": {"w":45,"h":30}
-		},
-		"fx_particle_ratata_02.png":
-		{
-			"frame": {"x":398,"y":403,"w":44,"h":27},
-			"rotated": false,
-			"trimmed": true,
-			"spriteSourceSize": {"x":0,"y":2,"w":44,"h":27},
-			"sourceSize": {"w":45,"h":30}
-		},
-		"fx_particle_ratata_03.png":
-		{
-			"frame": {"x":468,"y":455,"w":32,"h":23},
-			"rotated": false,
-			"trimmed": true,
-			"spriteSourceSize": {"x":0,"y":3,"w":32,"h":23},
-			"sourceSize": {"w":45,"h":30}
-		},
-		"fx_particle_ratata_04.png":
-		{
-			"frame": {"x":538,"y":278,"w":28,"h":14},
-			"rotated": false,
-			"trimmed": true,
-			"spriteSourceSize": {"x":1,"y":9,"w":28,"h":14},
-			"sourceSize": {"w":45,"h":30}
-		},
-		"fx_particle_ratata_05.png":
-		{
-			"frame": {"x":538,"y":312,"w":17,"h":13},
-			"rotated": false,
-			"trimmed": true,
-			"spriteSourceSize": {"x":2,"y":7,"w":17,"h":13},
-			"sourceSize": {"w":45,"h":30}
-		},
-		"fx_particle_ratata_06.png":
-		{
-			"frame": {"x":569,"y":410,"w":10,"h":8},
-			"rotated": false,
-			"trimmed": true,
-			"spriteSourceSize": {"x":5,"y":18,"w":10,"h":8},
-			"sourceSize": {"w":45,"h":30}
-		},
-		"fx_particle_ratata_07.png":
-		{
-			"frame": {"x":538,"y":410,"w":11,"h":11},
-			"rotated": false,
-			"trimmed": true,
-			"spriteSourceSize": {"x":15,"y":14,"w":11,"h":11},
-			"sourceSize": {"w":45,"h":30}
-		},
-		"fx_particle_shell.png":
-		{
-			"frame": {"x":571,"y":52,"w":4,"h":4},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {"x":0,"y":0,"w":4,"h":4},
-			"sourceSize": {"w":4,"h":4}
-		},
-		"fx_particle_smoke_01.png":
-		{
-			"frame": {"x":415,"y":260,"w":23,"h":37},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":37},
-			"sourceSize": {"w":23,"h":37}
-		},
-		"fx_particle_smoke_02.png":
-		{
-			"frame": {"x":415,"y":202,"w":38,"h":38},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":38},
-			"sourceSize": {"w":38,"h":38}
-		},
-		"fx_particle_smoke_03.png":
-		{
-			"frame": {"x":538,"y":209,"w":19,"h":15},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":15},
-			"sourceSize": {"w":19,"h":15}
-		},
-		"ship_enemy_body.png":
-		{
-			"frame": {"x":386,"y":455,"w":62,"h":23},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":23},
-			"sourceSize": {"w":62,"h":23}
-		},
-		"ship_enemy_full.png":
-		{
-			"frame": {"x":177,"y":403,"w":69,"h":31},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {"x":0,"y":0,"w":69,"h":31},
-			"sourceSize": {"w":69,"h":31}
-		},
-		"ship_enemy_gun.png":
-		{
-			"frame": {"x":538,"y":470,"w":25,"h":7},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":7},
-			"sourceSize": {"w":25,"h":7}
-		},
-		"ship_enemy_wing.png":
-		{
-			"frame": {"x":538,"y":172,"w":34,"h":17},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":17},
-			"sourceSize": {"w":34,"h":17}
-		},
-		"ship_giant_body.png":
-		{
-			"frame": {"x":295,"y":139,"w":54,"h":48},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {"x":0,"y":0,"w":54,"h":48},
-			"sourceSize": {"w":54,"h":48}
-		},
-		"ship_giant_engine.png":
-		{
-			"frame": {"x":538,"y":52,"w":13,"h":21},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":21},
-			"sourceSize": {"w":13,"h":21}
-		},
-		"ship_giant_floor.png":
-		{
-			"frame": {"x":307,"y":455,"w":59,"h":24},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {"x":0,"y":0,"w":59,"h":24},
-			"sourceSize": {"w":59,"h":24}
-		},
-		"ship_giant_full.png":
-		{
-			"frame": {"x":295,"y":10,"w":100,"h":109},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {"x":0,"y":0,"w":100,"h":109},
-			"sourceSize": {"w":100,"h":109}
-		},
-		"ship_giant_head.png":
-		{
-			"frame": {"x":337,"y":208,"w":41,"h":65},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":65},
-			"sourceSize": {"w":41,"h":65}
-		},
-		"ship_giant_roof.png":
-		{
-			"frame": {"x":250,"y":208,"w":67,"h":71},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {"x":0,"y":0,"w":67,"h":71},
-			"sourceSize": {"w":67,"h":71}
-		},
 		"ship_jet_body.png":
 		{
-			"frame": {"x":538,"y":10,"w":41,"h":22},
+			"frame": {"x":520,"y":351,"w":41,"h":22},
 			"rotated": false,
 			"trimmed": false,
 			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":22},
 			"sourceSize": {"w":41,"h":22}
 		},
-		"ship_jet_engine.png":
+		"fx_particle_smoke_02.png":
 		{
-			"frame": {"x":538,"y":378,"w":15,"h":12},
+			"frame": {"x":520,"y":393,"w":38,"h":38},
 			"rotated": false,
 			"trimmed": false,
-			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":12},
-			"sourceSize": {"w":15,"h":12}
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":38},
+			"sourceSize": {"w":38,"h":38}
+		},
+		"fx_particle_crash_04.png":
+		{
+			"frame": {"x":520,"y":451,"w":38,"h":20},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":39,"y":65,"w":38,"h":20},
+			"sourceSize": {"w":144,"h":87}
+		},
+		"fx_particle_smoke_01.png":
+		{
+			"frame": {"x":459,"y":173,"w":23,"h":37},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":37},
+			"sourceSize": {"w":23,"h":37}
+		},
+		"turret_enemy_gun.png":
+		{
+			"frame": {"x":459,"y":230,"w":24,"h":36},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":36},
+			"sourceSize": {"w":24,"h":36}
+		},
+		"ship_enemy_wing.png":
+		{
+			"frame": {"x":459,"y":286,"w":34,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":17},
+			"sourceSize": {"w":34,"h":17}
+		},
+		"fx_particle_ratata_03.png":
+		{
+			"frame": {"x":459,"y":323,"w":32,"h":23},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":0,"y":3,"w":32,"h":23},
+			"sourceSize": {"w":45,"h":30}
+		},
+		"fx_particle_pow_03.png":
+		{
+			"frame": {"x":459,"y":366,"w":31,"h":24},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":13,"y":31,"w":31,"h":24},
+			"sourceSize": {"w":56,"h":85}
 		},
 		"ship_jet_exhaust.png":
 		{
-			"frame": {"x":538,"y":345,"w":30,"h":13},
+			"frame": {"x":341,"y":337,"w":30,"h":13},
 			"rotated": false,
 			"trimmed": false,
 			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":13},
 			"sourceSize": {"w":30,"h":13}
 		},
-		"ship_jet_full.png":
+		"fx_particle_bullett.png":
 		{
-			"frame": {"x":10,"y":403,"w":69,"h":32},
+			"frame": {"x":459,"y":410,"w":30,"h":2},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":3,"y":0,"w":30,"h":2},
+			"sourceSize": {"w":33,"h":2}
+		},
+		"fx_particle_engine_01.png":
+		{
+			"frame": {"x":411,"y":117,"w":25,"h":29},
 			"rotated": false,
 			"trimmed": false,
-			"spriteSourceSize": {"x":0,"y":0,"w":69,"h":32},
-			"sourceSize": {"w":69,"h":32}
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":29},
+			"sourceSize": {"w":25,"h":29}
+		},
+		"fx_particle_ratata_04.png":
+		{
+			"frame": {"x":411,"y":166,"w":28,"h":14},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":1,"y":9,"w":28,"h":14},
+			"sourceSize": {"w":45,"h":30}
 		},
 		"ship_jet_gun.png":
 		{
-			"frame": {"x":538,"y":441,"w":27,"h":9},
+			"frame": {"x":391,"y":337,"w":27,"h":9},
 			"rotated": false,
 			"trimmed": false,
 			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":9},
 			"sourceSize": {"w":27,"h":9}
 		},
+		"fx_particle_engine_04.png":
+		{
+			"frame": {"x":166,"y":442,"w":25,"h":26},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":26},
+			"sourceSize": {"w":25,"h":29}
+		},
+		"ship_enemy_gun.png":
+		{
+			"frame": {"x":173,"y":388,"w":25,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":7},
+			"sourceSize": {"w":25,"h":7}
+		},
 		"ship_jet_head.png":
 		{
-			"frame": {"x":493,"y":56,"w":23,"h":22},
+			"frame": {"x":211,"y":442,"w":23,"h":22},
 			"rotated": false,
 			"trimmed": false,
 			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":22},
 			"sourceSize": {"w":23,"h":22}
 		},
-		"turret_enemy_base.png":
+		"fx_particle_engine_03.png":
 		{
-			"frame": {"x":99,"y":403,"w":58,"h":31},
+			"frame": {"x":254,"y":442,"w":22,"h":19},
 			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {"x":0,"y":0,"w":58,"h":31},
-			"sourceSize": {"w":58,"h":31}
+			"trimmed": true,
+			"spriteSourceSize": {"x":3,"y":1,"w":22,"h":19},
+			"sourceSize": {"w":25,"h":29}
 		},
-		"turret_enemy_full.png":
+		"ship_giant_engine.png":
 		{
-			"frame": {"x":415,"y":10,"w":58,"h":47},
+			"frame": {"x":10,"y":509,"w":13,"h":21},
 			"rotated": false,
 			"trimmed": false,
-			"spriteSourceSize": {"x":0,"y":0,"w":58,"h":47},
-			"sourceSize": {"w":58,"h":47}
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":21},
+			"sourceSize": {"w":13,"h":21}
 		},
-		"turret_enemy_gun.png":
+		"fx_particle_smoke_03.png":
 		{
-			"frame": {"x":415,"y":317,"w":24,"h":36},
+			"frame": {"x":296,"y":442,"w":19,"h":15},
 			"rotated": false,
 			"trimmed": false,
-			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":36},
-			"sourceSize": {"w":24,"h":36}
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":15},
+			"sourceSize": {"w":19,"h":15}
+		},
+		"fx_particle_ratata_05.png":
+		{
+			"frame": {"x":335,"y":442,"w":17,"h":13},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":2,"y":7,"w":17,"h":13},
+			"sourceSize": {"w":45,"h":30}
+		},
+		"fx_particle_engine_02.png":
+		{
+			"frame": {"x":43,"y":509,"w":15,"h":14},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":8,"y":2,"w":15,"h":14},
+			"sourceSize": {"w":25,"h":29}
+		},
+		"ship_jet_engine.png":
+		{
+			"frame": {"x":372,"y":442,"w":15,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":12},
+			"sourceSize": {"w":15,"h":12}
+		},
+		"fx_particle_ratata_07.png":
+		{
+			"frame": {"x":407,"y":442,"w":11,"h":11},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":15,"y":14,"w":11,"h":11},
+			"sourceSize": {"w":45,"h":30}
+		},
+		"fx_particle_ratata_06.png":
+		{
+			"frame": {"x":438,"y":442,"w":10,"h":8},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":5,"y":18,"w":10,"h":8},
+			"sourceSize": {"w":45,"h":30}
+		},
+		"fx_particle_pow_02.png":
+		{
+			"frame": {"x":520,"y":288,"w":26,"h":43},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {"x":14,"y":19,"w":26,"h":43},
+			"sourceSize": {"w":56,"h":85}
 		}
 	}
 }
