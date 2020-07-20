@@ -200,7 +200,7 @@ function generate(files, options, callback) {
 
   async.waterfall([
     function (callback) {
-      generator.trimImages(files, options, callback);
+      generator.prepareImages(files, options, callback);
     },
     function (callback) {
       generator.getImagesSizes(files, options, callback);
