@@ -16,7 +16,6 @@
     "glob": "~3.2.6",
     "mustache": "~0.7.2",
     "optimist": "~0.6.0",
-    "platform-command": "git+https://gitlab.com/gitlabdev/platform-command.git",
     "underscore": "1.9.2"
   },
   "devDependencies": {
