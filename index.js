@@ -4,7 +4,8 @@ var async = require('async');
 var fs = require('fs');
 var path = require('path');
 var glob = require('glob');
-var optimist = require('optimist');
+const { program } = require('commander');
+program.version('0.0.1');
 
 module.exports = generate;
 
@@ -24,106 +25,44 @@ var FORMATS = {
 };
 
 if (!module.parent) {
-  var argv = optimist.usage('Usage: $0 [options] <files>')
-    .options('f', {
-      alias: 'format',
-      describe: 'format of spritesheet (starling, sparrow, json, yaml, pixi.js, easel.js, egret, zebkit, cocos2d)',
-      default: ''
-    })
-    .options('cf', {
-      alias: 'customFormat',
-      describe: 'path to external format template',
-      default: ''
-    })
-    .options('n', {
-      alias: 'name',
-      describe: 'name of generated spritesheet',
-      default: 'spritesheet'
-    })
-    .options('p', {
-      alias: 'path',
-      describe: 'path to export directory',
-      default: '.'
-    })
-    .options('fullpath', {
-      describe: 'include path in file name',
-      default: false,
-      boolean: true
-    })
-    .options('prefix', {
-      describe: 'prefix for image paths',
-      default: ""
-    })
-    .options('trim', {
-      describe: 'removes transparent whitespaces around images',
-      default: false,
-      boolean: true
-    })
-    .options('square', {
-      describe: 'texture should be s square',
-      default: false,
-      boolean: true
-    })
-    .options('powerOfTwo', {
-      describe: 'texture width and height should be power of two',
-      default: false,
-      boolean: true
-    })
-    .options('validate', {
-      describe: 'check algorithm returned data',
-      default: false,
-      boolean: true
-    })
-    .options('scale', {
-      describe: 'percentage scale',
-      default: '100%'
-    })
-    .options('fuzz', {
-      describe: 'percentage fuzz factor (usually value of 1% is a good choice)',
-      default: ''
-    })
-    .options('algorithm', {
-      describe: 'packing algorithm: growing-binpacking (default), binpacking (requires passing --width and --height options), vertical or horizontal',
-      default: 'growing-binpacking'
-    })
-    .options('width', {
-      describe: 'width for binpacking',
-      default: undefined
-    })
-    .options('height', {
-      describe: 'height for binpacking',
-      default: undefined
-    })
-    .options('padding', {
-      describe: 'padding between images in spritesheet',
-      default: 0
-    })
-    .options('sort', {
-      describe: 'Sort method: maxside (default), area, width or height',
-      default: 'maxside'
-    })
-    .options('divisibleByTwo', {
-      describe: 'every generated frame coordinates should be divisible by two',
-      default: false,
-      boolean: true
-    })
-    .options('cssOrder', {
-      describe: 'specify the exact order of generated css class names',
-      default: ''
-    })
-    .check(function(argv){
-      if(argv.algorithm !== 'binpacking' || !isNaN(Number(argv.width)) && !isNaN(Number(argv.height))){
-        return true;
-      }
-      
-      throw new Error('Width and/or height are not defined for binpacking');
-    })
-    .demand(1)
-    .argv;
 
+  let _ = []  
+
+  program
+    .arguments('<files...>')
+    .option('-f, --format <value>', 'format of spritesheet (starling, sparrow, json, yaml, pixi.js, easel.js, egret, zebkit, cocos2d)', '')
+    .option('-cf, --customFormat <value>', 'path to external format template', '')
+    .option('-n, --name <value>', 'name of generated spritesheet', 'spritesheet')
+    .option('-p, --path <value>', 'path to export directory', '.')
+    .option('--fullpath', 'include path in file name', false)
+    .option('--prefix <value>', 'prefix for image paths', "")
+    .option('--trim', 'removes transparent whitespaces around images', false)
+    .option('--square', 'texture should be s square', false)
+    .option('--powerOfTwo', 'texture width and height should be power of two', false,)
+    .option('--validate', 'check algorithm returned data', false)
+    .option('--scale <value>', 'percentage scale', '100%')
+    .option('--fuzz <value>', 'percentage fuzz factor (usually value of 1% is a good choice)', '')
+    .option('--algorithm <value>', 
+        'packing algorithm: growing-binpacking (default), binpacking (requires passing --width and --height options), vertical or horizontal',
+        'growing-binpacking')
+    .option('--width <value>', 'width for binpacking', undefined)
+    .option('--height <value>', 'height for binpacking', undefined)
+    .option('--padding <value>', 'padding between images in spritesheet', 0)
+    .option('--sort <value>', 'Sort method: maxside (default), area, width or height', 'maxside' )
+    .option('--divisibleByTwo', 'every generated frame coordinates should be divisible by two', false)
+    .option('--cssOrder <value>', 'specify the exact order of generated css class names', '')
+    .action((files) => {
+      _ = files.length == 1 ? files[0] : files
+    })
+
+  
+  program.parse(process.argv)
+
+  const argv = program.opts();
+  argv._ = _
+  
   if (argv._.length == 0) {
-    optimist.showHelp();
-    return;
+    program.help()
   }
   generate(argv._, argv, function (err) {
     if (err) throw err;
@@ -152,7 +91,7 @@ if (!module.parent) {
  * @param {string} options.cssOrder specify the exact order of generated css class names
  * @param {function} callback
  */
-function generate(files, options, callback) {
+function generate(files, options, callback) {  
   files = Array.isArray(files) ? files : glob.sync(files);
   if (files.length == 0) return callback(new Error('no files specified'));
 
