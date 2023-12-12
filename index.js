@@ -153,7 +153,8 @@ if (!module.parent) {
  * @param {function} callback
  */
 function generate(files, options, callback) {
-  files = Array.isArray(files) ? files : glob.sync(files);
+  var isProvidedPattern = !Array.isArray(files) || files.length === 1;
+  files = isProvidedPattern ? glob.sync(files[0] || files) : files;
   if (files.length == 0) return callback(new Error('no files specified'));
 
   options = options || {};
