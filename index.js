@@ -4,7 +4,8 @@ var async = require('async');
 var fs = require('fs');
 var path = require('path');
 var glob = require('glob');
-var optimist = require('optimist');
+var yargs = require('yargs/yargs');
+var { hideBin } = require('yargs/helpers');
 
 module.exports = generate;
 
@@ -24,90 +25,91 @@ var FORMATS = {
 };
 
 if (!module.parent) {
-  var argv = optimist.usage('Usage: $0 [options] <files>')
-    .options('f', {
+  var argv = yargs(hideBin(process.argv))
+    .usage('Usage: $0 [options] <files>')
+    .option('f', {
       alias: 'format',
       describe: 'format of spritesheet (starling, sparrow, json, yaml, pixi.js, easel.js, egret, zebkit, cocos2d)',
       default: ''
     })
-    .options('cf', {
+    .option('cf', {
       alias: 'customFormat',
       describe: 'path to external format template',
       default: ''
     })
-    .options('n', {
+    .option('n', {
       alias: 'name',
       describe: 'name of generated spritesheet',
       default: 'spritesheet'
     })
-    .options('p', {
+    .option('p', {
       alias: 'path',
       describe: 'path to export directory',
       default: '.'
     })
-    .options('fullpath', {
+    .option('fullpath', {
       describe: 'include path in file name',
       default: false,
       boolean: true
     })
-    .options('prefix', {
+    .option('prefix', {
       describe: 'prefix for image paths',
       default: ""
     })
-    .options('trim', {
+    .option('trim', {
       describe: 'removes transparent whitespaces around images',
       default: false,
       boolean: true
     })
-    .options('square', {
+    .option('square', {
       describe: 'texture should be s square',
       default: false,
       boolean: true
     })
-    .options('powerOfTwo', {
+    .option('powerOfTwo', {
       describe: 'texture width and height should be power of two',
       default: false,
       boolean: true
     })
-    .options('validate', {
+    .option('validate', {
       describe: 'check algorithm returned data',
       default: false,
       boolean: true
     })
-    .options('scale', {
+    .option('scale', {
       describe: 'percentage scale',
       default: '100%'
     })
-    .options('fuzz', {
+    .option('fuzz', {
       describe: 'percentage fuzz factor (usually value of 1% is a good choice)',
       default: ''
     })
-    .options('algorithm', {
+    .option('algorithm', {
       describe: 'packing algorithm: growing-binpacking (default), binpacking (requires passing --width and --height options), vertical or horizontal',
       default: 'growing-binpacking'
     })
-    .options('width', {
+    .option('width', {
       describe: 'width for binpacking',
       default: undefined
     })
-    .options('height', {
+    .option('height', {
       describe: 'height for binpacking',
       default: undefined
     })
-    .options('padding', {
+    .option('padding', {
       describe: 'padding between images in spritesheet',
       default: 0
     })
-    .options('sort', {
+    .option('sort', {
       describe: 'Sort method: maxside (default), area, width or height',
       default: 'maxside'
     })
-    .options('divisibleByTwo', {
+    .option('divisibleByTwo', {
       describe: 'every generated frame coordinates should be divisible by two',
       default: false,
       boolean: true
     })
-    .options('cssOrder', {
+    .option('cssOrder', {
       describe: 'specify the exact order of generated css class names',
       default: ''
     })
@@ -118,11 +120,11 @@ if (!module.parent) {
       
       throw new Error('Width and/or height are not defined for binpacking');
     })
-    .demand(1)
+    .demandCommand(1)
     .argv;
 
   if (argv._.length == 0) {
-    optimist.showHelp();
+    yargs.showHelp();
     return;
   }
   generate(argv._, argv, function (err) {

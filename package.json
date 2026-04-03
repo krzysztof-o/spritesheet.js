@@ -11,17 +11,20 @@
     "spritesheet-js": "./index.js"
   },
   "dependencies": {
-    "async": "~0.2.9",
-    "binpacking": "~0.0.1",
-    "glob": "~3.2.6",
-    "mustache": "~0.7.2",
-    "optimist": "~0.6.0",
-    "platform-command": "git+https://gitlab.com/gitlabdev/platform-command.git",
-    "underscore": "1.9.2"
+    "async": "3.2.6",
+    "binpacking": "0.0.1",
+    "glob": "13.0.6",
+    "mustache": "4.2.0",
+    "underscore": "1.13.8",
+    "yargs": "18.0.0"
   },
   "devDependencies": {
-    "mocha": "*",
-    "expect.js": "~0.2.0"
+    "expect.js": "0.3.1",
+    "mocha": "11.7.5"
+  },
+  "overrides": {
+    "serialize-javascript": "^7.0.5",
+    "diff": "^8.0.3"
   },
   "scripts": {
     "test": "mocha test"
